@@ -16,13 +16,14 @@
 title: David Chou
 email: david.chou@microsoft.com
 description: David Chou's personal blog
-desc1: Software research and development
-desc2: Cloud and AI
+desc1: software research and development
+desc2: cloud and AI
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://dachou.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: davidcchou
 linkedin_username: dachou
-github_username:  dachou
+github_username: dachou
+rss: rss
 
 # Build settings
 markdown: kramdown

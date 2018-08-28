@@ -7,6 +7,18 @@
 
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
+            <p>
+            <a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a><br>  
+            {{- site.desc1 | escape -}}<br>
+            {{- site.desc2 | escape -}}
+            </p>
+      </div>
+
+      <div class="footer-col footer-col-2">
+          {%- include social.html -%}
+      </div>
+      <!--  
+      <div class="footer-col footer-col-3">
         <ul class="contact-list">
           <li class="p-name">
             {%- if site.author -%}
@@ -20,19 +32,7 @@
             {%- endif -%}
         </ul>
       </div>
-
-      <div class="footer-col footer-col-2">
-        {%- include social.html -%}
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>
-        {{- site.desc1 | escape -}}<br>
-        {{- site.desc2 | escape -}}
-        </p>
-      </div>
+      -->
     </div>
-
   </div>
-
 </footer>
