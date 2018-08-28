@@ -9,6 +9,7 @@ categories: jekyll update
 This week I had the opportunity to speak at the IT Architect Regional Conference in San Diego, on the subject of architecting enterprise SOA security. It is an interesting event, with speakers from Microsoft, IBM, Oracle, TIBCO, Fair Issac, and many other organizations.
 
 In a nutshell, my presentation was intended to point out the security aspects of planning an enterprise SOA, and a few topics that don't seem to be covered very often, and with an emphasis towards the future and navigating the organizational and cultural issues.
+
 A brief overview -
 
 ![slide](/assets/20071017-soa-security-1.jpg)
@@ -48,4 +49,7 @@ Finally, some overall talking points. One important and interesting point that w
 The most visible example of this is trying to implement message-level encryption for the sake of data integrity (message digests) and confidentiality. In order to establish an end-to-end security context (so that intermediaries, including the ESB, should not be able to decrypt sensitive data on transit to the destination), both the intended consumer and producer have to know exactly how to encrypt and decrypt data. And that depends on a previous exchange of public keys, which in this case had to occur directly between the consumer and producer endpoints. That in a way is tight coupling, as the consumer and producer endpoints have to know about each other, and are required to establish a one-to-one, peer-to-peer relationship in terms of public keys exchange used for encryption/decryption. To alleviate the situation, a centralized public key infrastructure can be implemented in an enterprise so that the management and decisions on public key usage can be externalized from endpoints and centralized. However, enterprise solutions in this area are still evolving, and we haven't yet seen effective solutions for doing similar things beyond the enterprise and on the Web.
 
 Lastly, the most important point is that, just like SOA governance, security is also a huge factor of the organization and corporate culture. We have to take a process-first approach to the problem (instead of technology-first), then weave in the technology delivery part of it.
+
+And here's the slide deck.
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/FlyadUv6mAvE3V" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/davidcchou/20071015-architecting-enterprise-security" title="20071015 Architecting Enterprise Security" target="_blank">20071015 Architecting Enterprise Security</a> </strong> from <strong><a href="https://www.slideshare.net/davidcchou" target="_blank">David Chou</a></strong> </div>
 
