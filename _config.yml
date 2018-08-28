@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: David Chou
 email: david.chou@microsoft.com
-description: David Chou's personal blog
+description: A software engineer's personal blog
 desc1: software research and development
 desc2: cloud and AI
 baseurl: "" # the subpath of your site, e.g. /blog
