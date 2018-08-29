@@ -24,6 +24,7 @@ url: "https://dachou.github.io" # the base hostname & protocol for your site, e.
 linkedin_username: dachou
 github_username: dachou
 rss: rss
+google_analytics: UA-124853502-1
 
 # Build settings
 markdown: kramdown
