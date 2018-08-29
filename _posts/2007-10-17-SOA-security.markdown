@@ -2,7 +2,6 @@
 layout: post
 title:  "SOA Security – Enterprise Architecture Perspective"
 date:   2007-10-17 10:18:22 -0700
-categories: jekyll update
 ---
 (originally published at [https://blogs.msdn.microsoft.com/dachou/2007/10/17/soa-security-enterprise-architecture-perspective/](https://blogs.msdn.microsoft.com/dachou/2007/10/17/soa-security-enterprise-architecture-perspective/))
 
