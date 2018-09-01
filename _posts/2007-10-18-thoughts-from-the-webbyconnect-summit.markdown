@@ -36,7 +36,7 @@ Some highlights:
 - Michael Eisner (Founder, Tornante; former Chairman and CEO of The Walt Disney Company) mentioned during his keynote address, that change is the constant theme (based on what he has seen in the media industry over the years), but the ability of great storytelling and expert editorial remains essential
 - Vinton Cerf (Chief Internet Evangelist, Google) mentioned trends of convergence and mobility ("I P on everything!"), and that client-side software is still relevant. Also interesting was the observation on challenges of the digital age, where information preservation (for thousands of years) will become a major issue due to the rapid advancements in technology
 
-My thoughts:
+**My thoughts:**
 
 It was very refreshing to hear from the thought leaders in the social Web and media and advertising agency spaces. Particularly many campaigns that worked wildly successfully, by leveraging many social elements of Web 2.0. For example, “Trevor” as world's intern where anyone can schedule Trevor's time and ask him to do things (like sending a heavy metal birthday gram), effectively used a combination of user-generated content, viral advertising, live web feeds, instant messaging, video streaming, community establishment in Facebook and Myspace, etc., that drew an extremely popular response on the Web. The campaigns discussed were just about the most effective use of Web 2.0 platforms I've seen.
 
@@ -45,7 +45,7 @@ To me it boils down to brand management, and the emergence of using Web-oriented
 - Fun and humor (one layer of connecting at an emotional level), but also be able to poke fun at oneself especially if concepts are parallel to public perception of the brand to begin with
 - It is comparatively less effective if a brand tries to uphold itself by fighting against public perception; as after all, brand *is* perception
 
-On the general trend of convergence:
+**On the general trend of convergence:**
 
 This was my biggest takeaway from the summit, as it was clear that the pendulum has swung back away from the extremes, in many different areas. As noted earlier, online and off-line, traditional media and online media, collective intelligence and expert editorial, etc. Basically people are no longer claiming the absolute dominance of one extreme over the other, but are seeing trends that hybrid and combinatorial models work much more effectively. In the technology world, the focus is now shifting towards bringing information and access to the users in a seamless and consistent manner, but with targeted user experiences for different platforms.
 
