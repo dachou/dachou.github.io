@@ -1,0 +1,34 @@
+---
+layout: post
+title:  "PDC2008 – A Futures Look at the Microsoft Platform"
+date:   2008-07-11 12:00:00 -0700
+---
+(originally published at [https://blogs.msdn.microsoft.com/dachou/2008/07/11/pdc2008-a-futures-look-at-the-microsoft-platform/](https://blogs.msdn.microsoft.com/dachou/2008/07/11/pdc2008-a-futures-look-at-the-microsoft-platform/))
+
+Microsoft's Professional Developer Conference (October 27-30, 2008) is coming to the Los Angeles Convention Center again!
+
+2005 was the last time PDC was held, also in LA. That event unveiled the pieces that make up of what we know today as .NET Framework 3.0, as well as Windows Vista, Windows Server 2008, etc. Things such as Windows Communications Foundation (WCF; then-called "Indigo"), Windows Presentation Foundation (WPF; then-called Avalon), and Windows Workflow Foundation all represented significant advances in the .NET Framework, and how they impact application development efforts on the Microsoft platform today.
+
+Unlike the TechEd events held annually at Orlando, Florida, PDC is focused on the leading-edge technologies and platform components and has usually been held once every two years. So Microsoft spent 3 years in hibernation this time (arguably for a number of reasons), and it certainly is a much different world today.
+
+Today we live in an environment where cloud computing has obtained mainstream status, and developers & organizations have a larger number of platforms to consider, and new & viable vendors to partner with. However, cloud computing also brings along a set of new concerns, models, and architectures.
+
+As a platform company, Microsoft has also been spending time to shift towards cloud computing. Our approach is to provide a platform that spans the cloud, enterprises, desktops, and devices; a full spectrum of choices that, we think, are relevant for the foreseeable future. And the Microsoft platform is designed to bring all of those previously silo'ed areas together, in a seamless and consistent manner, that fully addresses the wide range of concerns, models, and architectures in this new environment. Thus at PDC we can expect to get an inside look at how Microsoft's platform for the future has evolved, and how we can leverage existing skillsets to build applications for the future.
+
+PDC2008 features more than 160 sessions covering a wide range of topics for professional developers and architects. These sessions provide an in-depth technical understanding of Microsoft’s future platform and offer practical guidance to help plan the evolution of your own products.
+
+The topics include:
+
+- Cloud services - SQL Server Data Services, messaging and identity services, Live platform services, etc. 
+- Live Mesh - Mesh services, FeedSync, device P2P, Mesh Operating Environment, etc. 
+- Silverlight - mobile, deep dives, business apps, etc. 
+- Cloud synchronization - Sync Framework, ADO.NET Data Services (Astoria), SQL Server project Velocity, etc. 
+- .NET Framework - F#, C# futures, VB futures, dynamic languages, COM interop advances, WPF futures, WF futures, Workflow Services, etc. 
+- Windows 7 - touch computing, native Web services 
+- Windows Mobile - location-based services, Web development 
+
+And many, many more as more details emerge.
+
+Visit the Microsoft PDC [website](http://microsoftpdc.com/) for up-to-date information. For registration details, see http://microsoftpdc.com/Registration/. 
+
+Hope to see you there! Please say hi if you happen to run into me. 🙂
