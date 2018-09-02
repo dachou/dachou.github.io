@@ -3,8 +3,7 @@ layout: post
 title:  "Microsoft Implementing Software Plus Services"
 date:   2008-04-16 12:00:00 -0700
 ---
-(originally published at [https://blogs.msdn.microsoft.com/dachou/2008/04/15/microsoft-implementing-software-plus-services/
-](https://blogs.msdn.microsoft.com/dachou/2008/04/15/microsoft-implementing-software-plus-services/))
+(originally published at [https://blogs.msdn.microsoft.com/dachou/2008/04/15/microsoft-implementing-software-plus-services/](https://blogs.msdn.microsoft.com/dachou/2008/04/15/microsoft-implementing-software-plus-services/))
 
 Microsoft has been talking about "Software + Services" (S+S) as its vision of the future for a while now (see related posts on S+S: Microsoft Platform Overview & Talking about Software Plus Services). People like Bill Gates and Ray Ozzie often talk about the applicable patterns and trends that exemplify this concept, even though they don't always mention the moniker.
 And Microsoft's execution on this direction is quite visible too. From continued investments on the desktop and enterprise software, to the latest and still growing cloud platform that brings many of the traditional capabilities into the Web.
