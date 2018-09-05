@@ -3,7 +3,6 @@ layout: post
 title:  "Microsoft Implementing Software Plus Services"
 date:   2008-04-16 12:00:00 -0700
 ---
-(originally published at [https://blogs.msdn.microsoft.com/dachou/2008/04/15/microsoft-implementing-software-plus-services/](https://blogs.msdn.microsoft.com/dachou/2008/04/15/microsoft-implementing-software-plus-services/))
 
 Microsoft has been talking about "Software + Services" (S+S) as its vision of the future for a while now (see related posts on S+S: Microsoft Platform Overview & Talking about Software Plus Services). People like Bill Gates and Ray Ozzie often talk about the applicable patterns and trends that exemplify this concept, even though they don't always mention the moniker.
 And Microsoft's execution on this direction is quite visible too. From continued investments on the desktop and enterprise software, to the latest and still growing cloud platform that brings many of the traditional capabilities into the Web.
@@ -51,3 +50,5 @@ Now Microsoft actually has been delivering SharePoint services for a number of y
 Thus Windows Live Workspaces is still built on SharePoint, but has been designed specifically to support consumer and end-user collaboration. It provides capabilities for fine-grained document-level access control, ubiquitous access, cloud-based storage, and client-side add-on's that integrate directly into the Office clients. So users can create/open/save documents into Windows Live Workspace directly from Word or Excel, for example. And of course, user always have the option to save documents locally until they're ready to share with other people.
 
 This approach illustrates the S+S approach by leveraging best of both worlds. Rich client-side software (criticized as bloatware sometimes but it can also be perceived as having the capabilities ready-to-use regardless of where a user is; having internet access or not) that fully leverages the power of the client device platform to maximize individual productivity, while leveraging cloud-based platforms for sharing and collaborating with others to maximize group productivity.
+
+(originally published at <https://blogs.msdn.microsoft.com/dachou/2008/04/15/microsoft-implementing-software-plus-services/>)

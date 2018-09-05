@@ -3,7 +3,6 @@ layout: post
 title:  "Microsoft Platform Overview"
 date:   2008-04-15 12:00:00 -0700
 ---
-(originally published at [https://blogs.msdn.microsoft.com/dachou/2008/04/15/microsoft-platform-overview/](https://blogs.msdn.microsoft.com/dachou/2008/04/15/microsoft-platform-overview/))
 
 I also had the privilege of speaking at the South Bay .NET User Group, at their April monthly meeting, held at the Honda Motors U.S. headquarters campus in Torrance, CA.
 The topic of this presentation was an overview of the neat and new things on the broad Microsoft platform, to help distill an understanding of how Microsoft is evolving the platform in response to major trends in IT environment today.
@@ -41,3 +40,5 @@ Now Microsoft may be the most vocal about the value of client-side software comb
 Thus, we can expect to see that the technology "platform" is evolving into a much more diversified set of capabilities, and increasingly, those capabilities can be leveraged via a multitude of means beyond tradition API-based or Web services-based integration; beyond writing code. 
 
 <iframe src="//www.slideshare.net/slideshow/embed_code/key/unSFmf42SHVm9q" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/davidcchou/20080410-microsoft-platform-overview" title="20080410 Microsoft Platform Overview" target="_blank">20080410 Microsoft Platform Overview</a> </strong> from <strong><a href="https://www.slideshare.net/davidcchou" target="_blank">David Chou</a></strong> </div>
+
+(originally published at <https://blogs.msdn.microsoft.com/dachou/2008/04/15/microsoft-platform-overview/>)

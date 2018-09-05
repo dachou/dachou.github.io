@@ -3,7 +3,6 @@ layout: post
 title:  "SOA Security – Enterprise Architecture Perspective"
 date:   2007-10-17 10:10:10 -0700
 ---
-(originally published at [https://blogs.msdn.microsoft.com/dachou/2007/10/17/soa-security-enterprise-architecture-perspective/](https://blogs.msdn.microsoft.com/dachou/2007/10/17/soa-security-enterprise-architecture-perspective/))
 
 This week I had the opportunity to speak at the IT Architect Regional Conference in San Diego, on the subject of architecting enterprise SOA security. It is an interesting event, with speakers from Microsoft, IBM, Oracle, TIBCO, Fair Issac, and many other organizations.
 
@@ -52,3 +51,4 @@ Lastly, the most important point is that, just like SOA governance, security is 
 And here's the slide deck.
 <iframe src="//www.slideshare.net/slideshow/embed_code/key/FlyadUv6mAvE3V" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/davidcchou/20071015-architecting-enterprise-security" title="20071015 Architecting Enterprise Security" target="_blank">20071015 Architecting Enterprise Security</a> </strong> from <strong><a href="https://www.slideshare.net/davidcchou" target="_blank">David Chou</a></strong> </div>
 
+(originally published at <https://blogs.msdn.microsoft.com/dachou/2007/10/17/soa-security-enterprise-architecture-perspective/>)

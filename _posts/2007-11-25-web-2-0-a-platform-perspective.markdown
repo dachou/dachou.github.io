@@ -3,9 +3,6 @@ layout: post
 title:  "Web 2.0 – A Platform Perspective"
 date:   2007-11-25 10:00:00 -0700
 ---
-(originally published at [https://blogs.msdn.microsoft.com/dachou/2007/11/25/web-2-0-a-platform-perspective/](https://blogs.msdn.microsoft.com/dachou/2007/11/25/web-2-0-a-platform-perspective/))
-
-**Background & Primer**
 
 "Web as a Platform" has been a much discussed topic since Tim O'Reilly used it as a tagline in the first Web 2.0 conference back in October of 2004, then described in more detail in a [2005 article](http://www.oreillynet.com/lpt/a/6228), and the subsequent "[Mind Map](http://en.wikipedia.org/wiki/Image:Web_2.0_Map.svg)" graphic:
 
@@ -63,3 +60,6 @@ It's always interesting to try to take a peek at what may be possible in the fut
 *Ubiquitous Access w/ Rich User Experiences* - A consistent and seamless experience for people accessing their information, applications, and services, across a full spectrum of connected devices and systems. At the same time, highly targeted user experiences implemented for the appropriate form factors are available to take advantage of the latest hardware and device innovations.
 
 There are many more, such as the data/semantic Web, evolutionary intelligence, changes in social trends, etc. It'll be interesting to see how things pan out in this space.
+
+(originally published at <https://blogs.msdn.microsoft.com/dachou/2007/11/25/web-2-0-a-platform-perspective/>)
+

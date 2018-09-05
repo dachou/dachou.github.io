@@ -3,7 +3,6 @@ layout: post
 title:  "Thoughts from the WebbyConnect Summit"
 date:   2007-10-18 10:18:22 -0700
 ---
-(originally published at [https://blogs.msdn.microsoft.com/dachou/2007/10/18/thoughts-from-the-webbyconnect-summit/](https://blogs.msdn.microsoft.com/dachou/2007/10/18/thoughts-from-the-webbyconnect-summit/))
 
 I had the opportunity to attend the [WebbyConnect Summit](http://www.webbyawards.com/webbyconnect/) on October 3-5 at Laguna Beach. It was a series of non-technical panel discussions on the various growing trends on the Web, and their social and cultural impacts, especially with respect to the media and internet industries. Topics discussed include:
 - Web as an essential media channel
@@ -51,3 +50,4 @@ This was my biggest takeaway from the summit, as it was clear that the pendulum 
 
 Coming back closer to home, from a technology architecture perspective, I found all these trends of convergence are very analogous to the core of Microsoft's "Software Plus Services" (S+S) strategy (and moniker). I akin S+S to Microsoft's vision of the future, in response to all the recent innovation and mindshare on SOA, Web 2.0, SaaS, etc. I will leave the details of my thoughts on S+S to another post, but just briefly here - it's an architecture of "AND", where both local software and cloud-based services work together to provide the most targeted user experiences. Vinton Cerf noted a similar thought in his keynote, that the internet is still largely a transport that is agnostic of the context and data that traverses it. We still need software to interpret and visualize the information in meaningful ways. And the fact is, the dominant players in the online space, such as Google, Yahoo, eBay, Saleforce.com, etc., are all moving towards this middle by providing client-side software. It seems their current approach can be categorized as "Services Plus Software" where cloud-based services are augmented by client-side software, compared to Microsoft's approach of "Software Plus Services" where client-side software is augmented by "Web as features". It is arguable which approach (or direction) is more relevant, but I think in general the macro-trend that is occurring is that of convergence between software and services. 
 
+(originally published at <https://blogs.msdn.microsoft.com/dachou/2007/10/18/thoughts-from-the-webbyconnect-summit/>)

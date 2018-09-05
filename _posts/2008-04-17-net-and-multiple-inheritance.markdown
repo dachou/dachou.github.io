@@ -3,7 +3,6 @@ layout: post
 title:  ".NET and Multiple Inheritance"
 date:   2008-04-17 12:00:00 -0700
 ---
-(originally published at [https://blogs.msdn.microsoft.com/dachou/2008/04/17/net-and-multiple-inheritance/](https://blogs.msdn.microsoft.com/dachou/2008/04/17/net-and-multiple-inheritance/))
 
 Occasionally I get questions on why does .NET not support multiple inheritance. It is actually a pretty interesting question to contemplate with, though I usually start the conversation by asking: "what issue requires multiple inheritance to solve?".
 
@@ -23,3 +22,5 @@ Now Java doesn't support multiple inheritance as well, though probably for a dif
 So what's the solution? Often people are directed to using interfaces, but interfaces don’t lend themselves very well to meet the requirements of reusing code and implementing separation of concern; as interfaces are really intended to support polymorphism and loosely-coupled/contractual design. But other than trying to tie behaviors into object inheritance hierarchies, there are many alternative approaches that can be evaluated to meet those requirements. For example, adopting relevant design patterns like Visitor, frameworks like MVC, delegates, mixins (interfaces combined with AOP), etc.
 
 Bottom line is, there are considerably elegant alternatives to inheriting/deriving behavior in class hierarchies, when trying to facilitate code reuse with proper re-factoring. Plus trade-offs in code reuse vs. the costs incurred to manage the reuse is another full topic in itself. In some cases it may have been simpler to have multiple inheritance and access to sealed classes, but the trade-offs may have been greater costs in other areas.
+
+(originally published at <https://blogs.msdn.microsoft.com/dachou/2008/04/17/net-and-multiple-inheritance/>)

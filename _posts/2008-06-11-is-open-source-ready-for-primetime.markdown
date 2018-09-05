@@ -3,7 +3,6 @@ layout: post
 title:  "Is Open Source Ready for Prime Time?"
 date:   2008-06-11 12:00:00 -0700
 ---
-(originally published at [https://blogs.msdn.microsoft.com/dachou/2008/06/11/is-open-source-ready-for-prime-time/](https://blogs.msdn.microsoft.com/dachou/2008/06/11/is-open-source-ready-for-prime-time/))
 
 Well that's an obvious question. And you'd be surprised if you were expecting Microsoft to say no to it. 🙂 Fact is, Microsoft has learned / adapted to embrace and support open source communities and models.
 I had the opportunity to speak at the UCLA Anderson School of Management's IS Associates event, titled "[Is Open Source Ready for Prime Time](http://www.anderson.ucla.edu/x20247.xml)".
@@ -71,3 +70,5 @@ How does one measure the viability of an open source software product, when eval
 And not all software projects should be moved to open source models. Some projects are very well-suited to leverage open-source development, but some would benefit more remaining private. Again, there are differences between truly community-driven open source projects like the Linux kernel, and vendor-driven products like Eclipse and MySQL that do open source. But in general, we do find that technical products have a higher likelihood of building a strong community to maintain the product from a long-term perspective. Thus there is still plenty of room for proprietary/commercial software vendors like Microsoft and IBM to innovate and add value. For example, IBM is building on top of open source products, and Microsoft is focusing on user experience and innovative capabilities.
 
 Licensing in open source products, such as LGPL, GPL v3 and the ongoing debates around that, and the proliferation of different flavors of open source licenses, are still sources of confusion for users. For example, who is responsible to provide indemnity from a legal perspective? Our recommendation is, end-users of open source software products don't really have to worry about this, including developers who build applications using open source software. However, if open source software components are embedded and/or distributed as another commercial product, then the organization needs to engage its legal counsel to identify legal risks and map out mitigation requirements.
+
+(originally published at <https://blogs.msdn.microsoft.com/dachou/2008/06/11/is-open-source-ready-for-prime-time/>)

@@ -10,4 +10,6 @@ Over the course of my career, I have delivered many enterprise-grade, high-scale
 
 I am fascinated by code, its design and usage, and the resulting software we can create with code; and particularly  interested learning from others. I rarely express opinions here, but when I do, they’re my personal opinions and not those of any company I work at.
 
-[https://www.linkedin.com/in/dachou/](https://www.linkedin.com/in/dachou/)
+Thanks for visiting! Please feel free to reach out and contact me with any comments and/or questions.
+
+<https://www.linkedin.com/in/dachou/>

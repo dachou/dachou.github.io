@@ -3,7 +3,6 @@ layout: post
 title:  "PDC2008 – A Futures Look at the Microsoft Platform"
 date:   2008-07-11 12:00:00 -0700
 ---
-(originally published at [https://blogs.msdn.microsoft.com/dachou/2008/07/11/pdc2008-a-futures-look-at-the-microsoft-platform/](https://blogs.msdn.microsoft.com/dachou/2008/07/11/pdc2008-a-futures-look-at-the-microsoft-platform/))
 
 Microsoft's Professional Developer Conference (October 27-30, 2008) is coming to the Los Angeles Convention Center again!
 
@@ -32,3 +31,5 @@ And many, many more as more details emerge.
 Visit the Microsoft PDC [website](http://microsoftpdc.com/) for up-to-date information. For registration details, see http://microsoftpdc.com/Registration/. 
 
 Hope to see you there! Please say hi if you happen to run into me. 🙂
+
+(originally published at <https://blogs.msdn.microsoft.com/dachou/2008/07/11/pdc2008-a-futures-look-at-the-microsoft-platform/>)

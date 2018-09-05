@@ -3,9 +3,6 @@ layout: post
 title:  "Describing Web Platform Stack"
 date:   2007-12-01 10:00:00 -0700
 ---
-(originally published at [https://blogs.msdn.microsoft.com/dachou/2007/12/01/describing-web-platform-stack/](https://blogs.msdn.microsoft.com/dachou/2007/12/01/describing-web-platform-stack/))
-
-**Context**
 
 In an [earlier blog post]({{ site.baseurl }}{% post_url 2007-11-25-web-2-0-a-platform-perspective %}) I talked about "Web as a Platform" (in Web 2.0's context) and briefly described a layered and componentized perspective in looking at the Web platform in general. And I thought it would be more clarifying to illustrate what a Web platform stack might look like, so this post is intended to describe (not define) a stack view of the Web platform.
 
@@ -98,3 +95,5 @@ From a user participation perspective, lower layers are progressively closer to 
 ![Web as a Platform](/assets/20071201-WaaPCommunities.png)
 
 Certainly, areas where boundaries are being pushed may still sound like science fiction, and it's fun to imagine that new breakthroughs will bring about sea changes that will overthrow all conventional wisdom. The blogosphere already has tons of speculations in that respect. Though I believe "could" does not equate to "should", such that change for change sake will not add value; only changes that lead to better outcomes will gain adoption. Thus my assessment is that, significant changes are surely imminent, but conventional wisdom will also not cease to complete irrelevance. Eventually, when the pendulum settles, we usually see a hybrid world, with some changes more dominant, and some changes less. The Web is a place where rapid changes are occurring, and as architects and strategists, using a pragmatic viewpoint when facing these changes may help us better plan the migration path between current and future states.
+
+(originally published at <https://blogs.msdn.microsoft.com/dachou/2007/12/01/describing-web-platform-stack/>)

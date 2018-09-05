@@ -3,7 +3,6 @@ layout: post
 title:  "Describing Cloud Computing"
 date:   2008-07-25 12:00:00 -0700
 ---
-(originally published at [https://blogs.msdn.microsoft.com/dachou/2008/07/25/describing-cloud-computing/](https://blogs.msdn.microsoft.com/dachou/2008/07/25/describing-cloud-computing/))
 
 Cloud computing, the buzzword du jour and hottest cliche in IT at the moment, is a source for extensive debates as well as general confusion. Just like the other buzzwords, SOA, Web 2.0, Software-as-a-Service (SaaS), "cloud computing" is a very general term, and there are many interpretations of what it means.
 
@@ -107,4 +106,4 @@ However, when the dust (or the pendulum) finally settles, will we see cloud comp
 
 Technically, we can anticipate advances towards context-aware computing as a convergence of semantic Web, data portability, derived collective intelligence, intent-driven systems, etc.; which should result in a much more intelligent and interactive cloud.
 
-
+(originally published at <https://blogs.msdn.microsoft.com/dachou/2008/07/25/describing-cloud-computing/>)

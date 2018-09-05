@@ -3,9 +3,6 @@ layout: post
 title:  "Talking about Service Oriented Architecture"
 date:   2008-04-15 10:00:00 -0700
 ---
-(originally published at [https://blogs.msdn.microsoft.com/dachou/2008/04/15/talking-about-service-oriented-architecture/
-](https://blogs.msdn.microsoft.com/dachou/2008/04/15/talking-about-service-oriented-architecture/))
-
 
 I had the privilege to speak at the April monthly meeting at the Los Angeles Java Users Group. The meeting was held on April 1st at the Sun Microsystems office in LA, and so that in itself was the source of a few jokes lobbed at me. At times I was also referred to as Darth Vader (since I used to work at Sun and now I'm at Microsoft), but all in good fun. 
 
@@ -39,3 +36,5 @@ Conceptually, transforming a traditionally silo'ed enterprise environment into o
 Lastly, what may SOA look like in the future? There's talk about event-driven architecture (EDA) as the next step in evolution, which could be a more natural way of integrating business processes than the current RPC-style of tying everything together. There is also talk about extending SOA out to the Web, for enterprises, and additional advances in cloud computing, such as infrastructure services like internet service bus(es), federated security, cloud-based identity management and privacy controls, cloud-based data transformation services, etc. Continued progress in the semantic and interpretive Web may also play a major role in adding context to Web as a platform. And advances in model-driven programming and integrating them into service-oriented compositional architectures (such as Oslo on the Microsoft side, and SCA on the Java side) that change traditional multi-tiered application architectures to fully composite application architectures in all tiers (client-side mash-ups plus server-side mash-ups).
 
 <iframe src="//www.slideshare.net/slideshow/embed_code/key/7WWeQnsyjWWjVL" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/davidcchou/soa-today-and-beyond" title="20080401 SOA - Today and Beyond" target="_blank">20080401 SOA - Today and Beyond</a> </strong> from <strong><a href="https://www.slideshare.net/davidcchou" target="_blank">David Chou</a></strong> </div>
+
+(originally published at <https://blogs.msdn.microsoft.com/dachou/2008/04/15/talking-about-service-oriented-architecture/>)

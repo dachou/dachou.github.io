@@ -3,7 +3,6 @@ layout: post
 title:  "LineRider with Silverlight and Windows Live Services"
 date:   2008-07-11 12:00:00 -0700
 ---
-(originally published at [https://blogs.msdn.microsoft.com/dachou/2008/07/11/linerider-with-silverlight-2-and-windows-live-services/](https://blogs.msdn.microsoft.com/dachou/2008/07/11/linerider-with-silverlight-2-and-windows-live-services/))
 
 Last week InXile Entertainment launched a new version of the [LineRider](http://www.linerider.com/) game, built using Silverlight 2, and integrated Windows Live services (ID and Messenger). This is one of the projects me and my Microsoft team were directly involved with, by partnering with InXile Entertainment and Cynergy Systems. And we are quite excited with the results.
 
@@ -59,3 +58,5 @@ Cynergy is a leader in the design and development of Rich Internet Applications 
 Cynergy is privately held and headquartered in Washington, D.C.; the Company's U.S. field operations include Rochester, N.Y., Grand Rapids, Mich., and San Diego, Calif. Cynergy's European operation is based in London, United Kingdom and Copenhagen, Denmark and its Asia Pacific operations are located in Taipei, Taiwan and Sydney, Australia.
 
 Read Cynergy's [press release](http://www.cynergysystems.com/news/linerider.jsp) regarding this project.
+
+(originally published at <https://blogs.msdn.microsoft.com/dachou/2008/07/11/linerider-with-silverlight-2-and-windows-live-services/>)

@@ -3,7 +3,6 @@ layout: post
 title:  "Olympics on Silverlight"
 date:   2008-08-09 12:00:00 -0700
 ---
-(originally published at [https://blogs.msdn.microsoft.com/dachou/2008/08/09/olympics-on-silverlight/](https://blogs.msdn.microsoft.com/dachou/2008/08/09/olympics-on-silverlight/))
 
 08.08.08 - after 7 years of preparation and anticipation, the XXIX Olympiad has finally opened in Beijing. What a spectacular opening ceremony it was. And such breathtaking architectures of the "Bird's Nest" National Stadium and "Water Cube" Aquatics Center. It's hard even just to imagine the amount of thought and hard work that went into creating these phenomenal achievements.
 
@@ -50,3 +49,5 @@ And the "Control Room" section (toggled by the top button on the left panel) whi
 And look - DRM (Digital Rights Management)! 😉
 
 ![DRM](/assets/20080809-2746443776_4fde129bbb.jpg)
+
+(originally published at <https://blogs.msdn.microsoft.com/dachou/2008/08/09/olympics-on-silverlight/>)

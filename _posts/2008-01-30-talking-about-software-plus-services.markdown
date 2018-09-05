@@ -3,7 +3,6 @@ layout: post
 title:  "Talking about Software Plus Services"
 date:   2008-01-30 10:00:00 -0700
 ---
-(originally published at [https://blogs.msdn.microsoft.com/dachou/2008/01/30/talking-about-software-plus-services/](https://blogs.msdn.microsoft.com/dachou/2008/01/30/talking-about-software-plus-services/))
 
 I had the privilege of speaking at the southern California IASA (International Association of Software Architects) meeting, and connect with the great group of people there.
 
@@ -28,3 +27,5 @@ And this is one of the fundamental aspects of S+S; the power of choice. Instead 
 And the S+S future vision points out a bigger picture view of things where options that span this entire software spectrum, can be utilized in different combinations to deliver value to end-users.
 
 <iframe src="//www.slideshare.net/slideshow/embed_code/key/feDoCIsqrXjmDw" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/davidcchou/20080117-iasa-software-services" title="20080117 Iasa Software + Services" target="_blank">20080117 Iasa Software + Services</a> </strong> from <strong><a href="https://www.slideshare.net/davidcchou" target="_blank">David Chou</a></strong> </div>
+
+(originally published at <https://blogs.msdn.microsoft.com/dachou/2008/01/30/talking-about-software-plus-services/>)

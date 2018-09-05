@@ -3,7 +3,6 @@ layout: post
 title:  "Silverlight at Break.com"
 date:   2007-10-04 10:00:00 -0700
 ---
-(originally published at [https://blogs.msdn.microsoft.com/dachou/2007/10/04/silverlight-at-break-com/](https://blogs.msdn.microsoft.com/dachou/2007/10/04/silverlight-at-break-com/))
 
 Break.com, a popular online video destination (August 2007 stats were approximately 500M video clips, 17M unique users/month, and 1.3M unique users/day who consume 15M videos/day), best characterized as a channel catered to guys aged 18-35, worked with BLITZ agency to launch a "spatial search" application built using Silverlight 1.0. It is an interesting visualization of search results and related hits in a "non-linear" presentation.
 
@@ -36,3 +35,6 @@ A few more interesting live Silverlight applications:
 - [Popfly Overview](http://www.popfly.ms/Overview/) – Simple video player
 - [Microsoft SQL Server 2008 Demo](http://www.microsoft.com/sql/2008/overviewdemo/) – Interactive media player (with captions)
 - [Fox Movies Trailer Library](http://silverlight.net/fox/) – Interactive media player w/ High-Definition content
+
+(originally published at <https://blogs.msdn.microsoft.com/dachou/2007/10/04/silverlight-at-break-com/>)
+

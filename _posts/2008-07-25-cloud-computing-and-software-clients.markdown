@@ -3,7 +3,6 @@ layout: post
 title:  "Cloud Computing and Software Clients"
 date:   2008-07-25 12:00:00 -0700
 ---
-(originally published at [https://blogs.msdn.microsoft.com/dachou/2008/07/25/cloud-computing-and-software-clients/](https://blogs.msdn.microsoft.com/dachou/2008/07/25/cloud-computing-and-software-clients/))
 
 As the Web evolved, there has been countless proclamations that client-side software is dead or on its way out. Certainly, the staggering pace of innovation in Web application platforms and Web-oriented architectures, and associated mindshare shift towards Web development models, do show that client-side software is becoming less relevant than the heydays of client-server computing, at the very least.
 
@@ -90,3 +89,5 @@ And it's not limited to desktop client software. Increasingly, and sometimes mor
 One of the ways to look at this is to determine whether a particular application adds more value to the user by being client-centric, which cloud-based services become complementing factors; or by being cloud-centric which means client software is best suited for specialized purposes.
 
 Anyway, software clients may not be the default choice in providing cloud-based services to users, but they can be a useful option on any architect's tool belt. They're not always worthwhile, but just as no one technology is one-size-fits-all or all-supplanting, software clients can add significant value under the appropriate circumstances.
+
+(originally published at <https://blogs.msdn.microsoft.com/dachou/2008/07/25/cloud-computing-and-software-clients/>)

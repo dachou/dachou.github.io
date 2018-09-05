@@ -3,7 +3,6 @@ layout: post
 title:  "SOA Change Management Strategies"
 date:   2008-04-25 12:00:00 -0700
 ---
-(originally published at [https://blogs.msdn.microsoft.com/dachou/2008/04/22/soa-change-management-strategies/](https://blogs.msdn.microsoft.com/dachou/2008/04/22/soa-change-management-strategies/))
 
 By today's standards, it is pretty well-understood that governance is a critical success factor for enterprise SOA initiatives. And there is already a considerably saturated/consolidated market providing the SOA governance solutions (see Gartner's [Magic Quadrant for Integrated SOA Governance Technology Sets, 2007](http://mediaproducts.gartner.com/reprints/hp/vol1/article4/article4.html), Forrestor's [SOA Service Life-Cycle Management Q1 2008](http://www.softwareag.com/Corporate/Images/The%20Forrester%20Wave-SOA%20Service%20Life-Cycle%20Management,%20Q1%202008_tcm16-38231.pdf), and [SOA Governance Conference 5](http://www.soagovcon5.com/) for some content from HP, IBM, Progress Software, and SOA Software).
  
@@ -67,3 +66,5 @@ The enterprise perspective can be that, all three types of tests are done; it’
 There are still some areas where the current set of SOA governance and testing tools don't address very well. It's not that these products lack maturity; it's just some issues are inherent in distributed computing and are created by the collection of design decisions, processes and methodologies, and technologies implemented in an SOA (which obviously, can be different for each organization). The SOA governance solution vendors themselves state that governance is a people-oriented process.
 
 Thus, when architecting SOA governance, additional thought needs to be placed in these areas, in a change management context, and integrated into many different aspects of an SOA, leveraging an integrated approach across people, processes, and technologies.
+
+(originally published at <https://blogs.msdn.microsoft.com/dachou/2008/04/22/soa-change-management-strategies/>)

@@ -3,15 +3,10 @@ layout: post
 title:  "Strong User Authentication on the Web"
 date:   2008-08-18 12:00:00 -0700
 ---
-(originally published at [https://msdn.microsoft.com/en-us/cc838351.aspx](https://msdn.microsoft.com/en-us/cc838351.aspx))
+
+Focusing on methods that are used to implement strong user authentication for online-consumer identities, this article aims to distill a comprehensive view of strong user authentication by examining its concepts, implementation approaches, and challenges/additional concerns at the architectural level. It discusses effective solution approaches, overall architecture design, and emerging developments. (10 printed pages)
 
 ![arc journal](/assets/20080818-arcjournal.png)
-
-David Chou  
-Microsoft Corporation  
-August 2008
-
-Summary: Focusing on methods that are used to implement strong user authentication for online-consumer identities, this article aims to distill a comprehensive view of strong user authentication by examining its concepts, implementation approaches, and challenges/additional concerns at the architectural level. It discusses effective solution approaches, overall architecture design, and emerging developments. (10 printed pages)
 
 ## Introduction
 
@@ -182,3 +177,7 @@ David Chou is an architect in the Developer & Platform Evangelism organization a
 This article was published in the Architecture Journal, a print and online publication produced by Microsoft. For more articles from this publication, please visit the [Architecture Journal](http://www.architecturejournal.net/) Web site.
 
 ![Architecture Journal](/assets/20080818-arcjournal16.jpg)
+
+(originally published at [https://msdn.microsoft.com/en-us/cc838351.aspx](https://msdn.microsoft.com/en-us/cc838351.aspx))
+
+
