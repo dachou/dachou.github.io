@@ -4,7 +4,7 @@ title:  "Is Open Source Ready for Prime Time?"
 date:   2008-06-11 12:00:00 -0700
 ---
 
-Well that's an obvious question. And you'd be surprised if you were expecting Microsoft to say no to it. 🙂 Fact is, Microsoft has learned / adapted to embrace and support open source communities and models.
+Well that's a question with a very obvious answer, right? And you'd be surprised if you were expecting Microsoft to say no to it. 🙂 Fact is, Microsoft has learned / adapted to embrace and support open source communities and models.
 I had the opportunity to speak at the UCLA Anderson School of Management's IS Associates event, titled "[Is Open Source Ready for Prime Time](http://www.anderson.ucla.edu/x20247.xml)".
 
 <iframe src="//www.slideshare.net/slideshow/embed_code/key/NyFQ2vFPkzvNSw" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/davidcchou/20080602-microsoft-and-open-source" title="20080602 Microsoft and Open Source" target="_blank">20080602 Microsoft and Open Source</a> </strong> from <strong><a href="https://www.slideshare.net/davidcchou" target="_blank">David Chou</a></strong> </div>
