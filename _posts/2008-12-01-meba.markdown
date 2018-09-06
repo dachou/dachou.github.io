@@ -1,0 +1,77 @@
+---
+layout: post
+title:  "Multi-Enterprise Business Applications as Next-Gen B2B Business Processes"
+date:   2008-12-01 12:00:00 -0700
+---
+
+Multi-Enterprise Business Applications (MEBA) are a new class of applications that can be used to support business processes that span enterprise and organizational boundaries. MEBAs leverage best practices and patterns from service-oriented architecture (SOA) techniques and technologies, and specifically cloud-based platforms, to facilitate the next-generation B2B (or multi-enterprise) collaboration.
+
+This is a project I had the privilege to participate in for the past few months, along with my esteemed colleague, [Wade Wegner](http://blog.wadewegner.com/), and under [Jack Greenfield](http://blogs.msdn.com/jackgr/)'s leadership, as part of Microsoft's Platform Architecture Team. This project was just highlighted at Microsoft’s Professional Developers Conference (PDC2008) in Los Angeles a few weeks ago, as the RedPrairie keynote demos that showcased Microsoft’s cloud computing platform, and discussed in more depth in one of its breakout sessions.
+
+And more recently, we took a more architectural look at MEBA's at Microsoft's Strategic Architect Forum 2008 (SAF08).
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/GaObCHUhehSbKD" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/davidcchou/multienterprise-business-applications-presentation" title="Multi-Enterprise Business Applications" target="_blank">Multi-Enterprise Business Applications</a> </strong> from <strong><a href="https://www.slideshare.net/davidcchou" target="_blank">David Chou</a></strong> </div>
+
+So what do we mean by “multi-enterprise business applications”? They are a new class of applications, different from the traditional data-driven applications that focus on managing data and resources and providing access to end users. They are more focused on implementing business processes that span enterprises, such as traditional B2B integration and collaboration scenarios. They leverage and build upon message-based integration and use well-defined protocols and roles, such as fundamental approaches and technologies used in enterprise service-oriented architecture initiatives. Actually, in a way, they represent an approach of extending enterprise SOA beyond the four walls of each enterprise, to integrate and work more seamlessly with other enterprises.
+
+At the same time, multi-enterprise business applications also have some differentiating requirements. Scenarios may include participants distributed throughout different parts of the world. And since they are intended to support mission-critical business activities, we need to have a very robust architecture that can ensure high availability, high reliability, a high-level of security; plus the need to have auditing, reporting, regulatory compliance, and so on; not significantly different from our enterprise IT architecture concerns from that perspective.
+
+And unlike traditional SOA applications that are more focused on functional capabilities within one enterprise, MEBAs extend the SOA concepts and technologies to business processes that span multiple enterprises. In addition, because MEBAs operate between organizations, their primary concerns are also different – community management, identity management, process execution management, multi-enterprise governance, etc. 
+
+Moreover, unlike incumbents in the B2B software and service providers spaces where implementations today consist mostly of customizing proprietary products and services; MEBA defines an architecture in which foundational, common services should be implemented, and how they can composited into applications that define business processes. The evolution and maturity model of MEBAs are also more dependent on the community, than any one vendor maintaining a solution. MEBAs are a new class of applications; not a new class of products or solutions.
+
+Thus MEBA’s can be used across many different industries, especially ones that, from a traditional B2B perspective, tend to have a lot of cross-organizational collaboration needs. During this phase of the MEBA project, we attempted to take a more detailed look at the supply chain industry. And a more detailed view found many capabilities, within the supply chain industry, that today leverage various forms of technologies and implementation approaches to facilitate communication and integration across multiple partners on supply chain networks, or in a way, multiple enterprises. And for our project, we chose just one specific area, supply chain orchestration, to investigate further to evaluate how MEBA’s can be used to meet its specific requirements. So at the next lower level of detail, we have identified a set of common scenarios in supply chain orchestration. And then we chose just a few to prototype out, such as search for capacity, product recall, etc.; by building with Microsoft's Azure Services Platform.
+
+## Challenges Today
+
+So now taking a few steps back up. Let’s talk about how some of these scenarios and capabilities are implemented today across the various industries. First of all we have multiple protocols that are intended to standardize the interaction models and data being exchanged. Some are more industry specific, such as RosettaNet, HL7 for healthcare, and FIX for financial services. While some are designed to be more general purpose, such as ebXML, WS-BPEL or BPEL4WS, and many others such as WS-Choreography, Java Business Integration (JBI), etc.
+
+But this at the same time also hints at some challenges we have today, as in a way, there are just too many standards. And many organizations are in the process of developing more standards to define how multi-enterprise collaboration should be facilitated in their industries. For example, automotive, auto parts distribution, etc.; just to name a few.
+
+And the observation today, is that, B2B, or integration or collaboration between multiple enterprises, or inter-enterprise SOA, is still relatively complex and difficult to implement and manage.
+
+For example, we have a very diverse set of technologies, collected from the past 25 years or so in various attempts at optimizing or streamlining communications between multiple organizations. Everything from EDI, FTP, on-premises software, integration service providers, B2B gateways, to the current class of SOA solutions that can be extended to support B2B scenarios.
+
+And not just the underlying technologies used, enterprises have very sophisticated needs and concerns in many areas, such as security, data ownership, management, and governance, etc. What’s more here, is that these needs and concerns are in a way, amplified or more complex when we look at them from a cross-organizational perspective.
+
+## Why MEBA?
+
+So integration and enabling business processes across organizational boundaries, have been complex and difficult to accomplish, for many years. Why do we think now we may have a better chance at simplifying and streamlining efforts in this area, and moreover, why do we think MEBA’s, as a new class of applications may have a better chance at doing so?
+
+Traditional B2B or multi-enterprise communication and collaboration were complex to implement and often unreliable and error-prone. Organizations had to deal with a multitude of technologies, standards, and additional sets of technologies and implementations with each partner organization on a one-to-one basis. MEBAs aim to streamline and simplify these inherent complexities, by providing an architecture that builds on existing technologies and abstracts infrastructural concerns.
+
+From a timing perspective, the growing inter-dependence and always-connected environment for businesses, and availability of key new technologies (Web services, SOA, cloud computing, etc.), are showing signs that the time is right to take a new approach at multi-enterprise (or B2B) interactions. MEBAs build on the best practices and proven technology models of today, and offer the potential to greatly streamline and simplify efforts of implementing business processes that span multiple enterprises.
+
+And in general, by leveraging many of the best practices and building on many of the latest trends, such as the concept of an “[Internet Service Bus](https://msdn.microsoft.com/en-us/library/bb906065.aspx)” (ISB) providing an architecture and platform, upon which multi-enterprise business applications can be constructed, that simplify and streamline many aspects of B2B integration today, while meeting the needs of the organizations and participants involved. We think, this concept of the ISB, will significantly transform the architecture, and how we design and implement approaches to facilitate multi-enterprise business applications.
+
+And of course, this doesn’t mean we intend to replace the work organizations have already done with protocols and standards (such as RosettaNet, ebXML, HL7, FIX, etc.). In fact we think we can leverage those work, and use MEBA’s to provide implementations of these protocols, as well as an environment / platform to facilitate their orchestration and management.
+
+Thus MEBAs provide the potential of these high-level benefits:
+
+- **Business benefits** – improve business agility, bottom-line revenue (reduced errors and cost, and faster response), and top-line revenue (higher automation, improved relationships with partners and customers)
+
+- **Technical benefits** – simplify and streamline connectivity, improve visibility and governance, higher quality of service, focus on delivering business processes instead of infrastructure, leverage standards-based technologies, bridge multiple and disparate identity systems, etc.
+
+## MEBA Reference Architecture
+
+![meba architecture](/assets/20081201-meba-arch.jpg)
+
+Now let us show you what a reference architecture for multi-enterprise business applications may look like. Just as you would expect, there are many layers of capabilities from this perspective. Basically, these applications will need to have a foundational services layer, which provides some core infrastructure capabilities such as compute or runtime environment, identity management system, workflow execution and management, robust messaging infrastructure, data management solution, and operational management services. On top of that, we can then build a layer of higher-level services, which are considered more functional, and provides capabilities such as community management (extending from trading party management in a traditional B2B perspective), services orchestration, business process management, party management, and so on. Then finally, we can build various types of communities, or partner networks, that define working relationships between multiple organizations. For example, each organization can belong to multiple communities, or as administrators to a particular community, can invite and add new partners, and so on. We would also like to use model-driven techniques to define business processes, and to be able to provision one or more instances of a given business process, each supporting a specific community of trading partners.
+
+## Azure Services Platform
+
+When we saw the plans for the Azure Services Platform, we studied them to understand the kinds of applications it would support. Our conclusion was that it will spawn a second generation of B2B applications. We then coined the name MEBA to describe this new class of applications. Our focus here is to talk about MEBAs and how they can leverage this Azure Services Platform. So we will not get into the details of the Azure Services Platform, but we do want to articulate specifically how some of its components help support the MEBA concept.
+
+- **Windows Azure** – the cloud compute platform, provides the underlying runtime environment for the foundational services and MEBA implementation. It offers high scalability and reliability, and global reach to partners across the world
+
+- **.NET Services** – with its Service Bus, Access Control Services, and Workflow Services, provides the fundamental “Internet Service Bus” that can effectively address common concerns around identity and security, connectivity, and service orchestrations between multiple organizations
+
+- **SQL Services** – provides the scalable and reliable cloud-based database solution, which helps to establish databases in the cloud to manage the data that is shared across the multiple organizations, and especially data that support the communities and their interactions
+
+- **Live Services** – provides capabilities to connect to end users and support many aspects of human interaction needs
+
+## Food for Thought
+
+MEBAs have the potential of completely changing the way enterprises interact with each other. If we further extend the MEBA vision and how it continues to simplify and streamline infrastructure concerns in facilitating business processes across organizations, we may see a world where business networks can be quickly and dynamically constructed to deliver business capabilities, simply by being able to connect the dots (or building with blocks). Business results delivered by the collective resources and capabilities from a network of multiple enterprises will become true differentiating factors, and more significant than any one enterprise can deliver alone. New business models may also emerge, as increasingly enterprises can participate in the larger scheme of things, and sometimes be a part of the process that span industries. The control of processes may begin to shift away from being enterprise-centric, to community-centric. Ultimately, enterprises can create new, more diverse, and more differentiating business offerings by being able to leverage the community of partners.
+
+(originally published at <https://blogs.msdn.microsoft.com/dachou/2008/12/01/multi-enterprise-business-applications-meba-as-cloud-based-next-generation-b2b-business-processes/>)
