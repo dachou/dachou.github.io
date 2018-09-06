@@ -180,4 +180,3 @@ This article was published in the Architecture Journal, a print and online publi
 
 (originally published at [https://msdn.microsoft.com/en-us/cc838351.aspx](https://msdn.microsoft.com/en-us/cc838351.aspx))
 
-
