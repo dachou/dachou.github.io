@@ -6,7 +6,7 @@ date:   2010-03-21 12:00:00 -0700
 
 ![jetty](/assets/20100321-jetty-logo-80x22.png)
 
-_[Update 2011.01.17] NIO is no longer an issue in Windows Azure with SDK 1.3 (see post for more details)_
+_[Update 2011.01.17] NIO is no longer an issue in Windows Azure with SDK 1.3 ([see post for more details]({{ site.baseurl }}{% post_url 2011-01-17-run-java-with-glassfish-in-windows-azure %}))_
 _[Update 2010.03.28] Included Jetty configuration information (see “Configure Jetty” section below)_
 
 Jetty is a Java-based, open source Web Server which provides a HTTP server and Servlet container capable of serving static and dynamic content either from a standalone or embedded instantiations. Jetty is used by many popular projects such as the Apache Geronimo JavaEE compliant application server, Apache ActiveMQ, Apache Cocoon, Apache Hadoop, Apache Maven, BEA WebLogic Event Server, Eucalyptus, FioranoMQ Java Messaging Server, Google App Engine and Web Toolkit plug-in for Eclipse, Google Android, RedHat JBoss, Sonic MQ, Spring Framework, Sybase EAServer, Zimbra Desktop, etc. (just to name a few).
