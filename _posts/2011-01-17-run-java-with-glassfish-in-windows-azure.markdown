@@ -4,6 +4,8 @@ title:  "Run Java with GlassFish in Windows Azure"
 date:   2011-01-17 12:00:00 -0700
 ---
 
+![Glassfish](/assets/20110117-glassfish.png)
+
 At [PDC10](http://microsoftpdc.com/) (Microsoft’s Professional Developers Conference 2010), Microsoft has again provided affirmation of support for Java in Windows Azure. “We're making Java a first-class citizen with Windows Azure, the choice of the underlying framework, the choice of the development tool.”, said Bob Muglia (President of Server and Tools at Microsoft), during his keynote presentation ([transcript](http://www.microsoft.com/Presspass/exec/bobmuglia/10-28PDC10.mspx)). Then during PDC Vijay Rajagopalan delivered a session ([Open in the Cloud: Windows Azure and Java](http://bit.ly/bUH4jQ)) which provided more details on the state of many deliverables, including:
 - [Windows Azure SDK for Java](http://www.windowsazure4j.org/)
 - [Windows Azure Tools for Eclipse](http://www.windowsazure4e.org/) 
