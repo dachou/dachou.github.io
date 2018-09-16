@@ -10,7 +10,7 @@ It was back in 2008 when I first wrote about [.NET and Multiple Inheritance]({{ 
 
 _(from <https://www.uml-diagrams.org/generalization.html>)_
 
-To clarify - I don't think multiple inheritance is inherently 'bad'; I think it is an elegant solution for when we do want to inherit implementation and/or state from parent/super classes (such as classes that have orthogonal behaviors). But I was fascinated by the diverse perspectives on this language construct, and how different approaches were taken in designing Java and C#, which don't support multiple inheritance of implementation and state (some think that inheritance of type, or interfaces, is a form of inheritance too but I tend to think of that as design by contract using abstract types as opposed to inheritance).
+To clarify - I don't think multiple inheritance is inherently 'bad'; I think it is an elegant solution for when we do want to inherit implementation and/or state from parent/super classes (such as classes that have orthogonal behaviors). But I am fascinated by the diverse perspectives on this language construct, and how different approaches were taken in designing Java and C#, which don't support multiple inheritance of implementation and state (some think that inheritance of type, or interfaces, is a form of inheritance too but I tend to think of that as design by contract using abstract types as opposed to inheritance).
 
 ## Design Principles
 
@@ -45,7 +45,7 @@ _(from <https://en.wikipedia.org/wiki/Multiple_inheritance>)_
 
 For example, we have classes B and C defined as subclasses of class A, and then class D (multiple) inherits from both B and C. Now in C++ this can be avoided, but in Java and C# every class is a subclass of Object, so by default this situation would surface with multiple inheritance. This adds complexity, because the compiler needs to handle these object relationships correctly, when allocating copies of each class A, B, C in the new D instance.
 
-For example, in C++:
+In C++:
 
 {% highlight C++ %}
 class A { ... };
@@ -65,7 +65,7 @@ class C : public virtual A { ... };
 class D : public B, public C { ... };
 {% endhighlight %}
 
-In this case, only one instance of A would be included in the derived class, and referenced using pointers instead; essentially creating the 'diamond' relationship for the D instance. But now we have complications in how object initializations are executed. The compiler initializes A in the D constructor, and pointers to it in B and C, then the rest members of the classes B, C, and D are initialized. However there's an implicit rule that once the D constructor has initialized A, the B and C constructors are not allowed to re-initialize it (because the compiler doesn't know which constructor between B and C the programmer intended to use). This often causes runtime issues. Then there are additional complexities with assignment operators, type conversion, etc. that are more frequently used throughout a program, but would require extra attention to avoid pitfalls.
+In this case, only one instance of A would be included in the derived class, and referenced using pointers instead; essentially creating the 'diamond' relationship for the D instance. But now we have complications in how object initializations are executed. The compiler initializes A in the D constructor, and pointers to it in B and C, then the rest members of the classes B, C, and D are initialized. However there's an implicit rule that once the D constructor has initialized A, the B and C constructors are not allowed to re-initialize A again (because the compiler doesn't know which constructor between B and C the programmer intended to use). This often causes runtime issues. Then there are additional complexities with assignment operators, type conversion, etc. that are more frequently used throughout a program, but would require extra attention to avoid pitfalls.
 
 And then there's multiple inheritance of implemenation, where complexities arise when the compiler needs to figure out which method implementation should be called, when derived classes have overridden methods in base/super classes. Or, a programmer can unwittingly introduce a name conflict by adding a new method to a superclass (such as when we have D::method and B::method, then someone adds A::method - which implementation should be used when D::method is invoked?).
 
@@ -75,7 +75,7 @@ However, this boils down to the observation that multiple inheritance isn't a hi
 
 ## Fundamental Differences
 
-And as we discussed, in most cases where multiple inheritance is considered, we can instead use techniques such as object composition, delegation, AOP with mixins, etc.; as opposed to thinking multiple inheritance as the only solution to accomplish implementation and/or state reuse. However, this is indeed considered a work-around to a useful feature. I'd have to write and maintain more code to make composition/delegation work, and more code when referenced classes/instances are updated (such as new methods I'd need to also add to the wrapper code), compared to effectively using multiple inheritance.
+And as we discussed, in most cases where multiple inheritance is considered, we can instead use techniques such as object composition, delegation, AOP with mixins, etc.; as opposed to thinking multiple inheritance as the only solution to accomplish implementation and/or state reuse. However, this is indeed considered a work-around to a useful feature. I have to write and maintain more code to make composition/delegation work, and more code when referenced classes/instances are updated (such as new methods I'd need to also add to the wrapper code), compared to effectively using multiple inheritance.
 
 From this perspective, what [Bjarne Stroustrup said in 2003](https://www.artima.com/intv/modern.html) was particularly enlightening:
 
@@ -85,4 +85,4 @@ To me this also pointed out some fundamental differences between C++ and Java/C#
 
 The introduction of Java and C# also marked the transition between the age of expert systems programmers to the age of democratized applications programming for the masses. Where C/C++ places more weight towards flexibility, Java/C# derives power from restrictions/limits. So in a way, C/C++ and Java/C# are fundamentally different languages well-suited for somewhat different software development scenarios. Thus we don't necessarily need to think, that because these are all 'programming languages' (that look especially similar), if one language has some useful features, then another language should have those same features too.
 
-Personally, I kind of like it that differences in these languages exist, which helps me to focus on different things when developing different kinds of software. On the other hand, do I sometimes wish for some C++ features when working in Java/C#, or wish for the rich high-level frameworks in Java/C# from a C++ perspective? Sure I do; but not for long. It's more fun to make things work so I just move on. 😉
+Personally, I kind of like it that differences in these languages exist, which help me focus on different things when developing different kinds of software. On the other hand, do I sometimes wish for some C++ features when working in Java/C#, or wish for the rich high-level frameworks in Java/C# from a C++ perspective? Sure I do; but not for long. It's more fun to make things work so I just move on. 😉
