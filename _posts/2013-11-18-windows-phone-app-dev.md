@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Windows Phone and Windows Azure at Devoxx"
+title:  "Windows Phone and Windows Azure (Devoxx 2013)"
 date:   2013-11-18 12:00:00 -0700
 ---
 

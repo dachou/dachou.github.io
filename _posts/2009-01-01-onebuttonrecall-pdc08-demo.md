@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Supply Chain Management Solution in Windows Azure at PDC2008"
+title:  "Supply Chain Management Solution in Windows Azure (PDC2008)"
 date:   2009-01-01 12:00:00 -0700
 ---
 
