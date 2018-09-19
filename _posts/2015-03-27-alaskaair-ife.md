@@ -4,7 +4,7 @@ title:  "Alaska Airlines In-Flight Entertainment with Windows Devices"
 date:   2015-03-27 12:00:00 -0700
 ---
 
-It is always nice to see a project that we work on, to come to life. I am glad to have had the opportunity to participate as a member of the team helping to put this together.
+It is always nice to see a project to come to life. I am glad to have had the opportunity to participate as a member of the team helping to put this together.
 
 ![Alaska Airlines IFE](/assets/20150327-alaskaair-ife.jpg)
 

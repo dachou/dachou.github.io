@@ -8,7 +8,7 @@ After months of work, the [Fitbit app for Windows 8](https://www.microsoft.com/e
 
 ![Fitbit app](/assets/20130101-fitbit-windows-8.jpg)
 
-I'm a big fan of Fitbit and have been wearing one every day for a while now. We first worked with the Fitbit team to bring the app to Windows Phone, and now it is also available on Windows 8. Thanks to the Fitbit team for working with us!
+I'm a big fan of Fitbit and have been wearing one every day for a while now. First the Fitbit team brought the app to Windows Phone, and now it is also available on Windows 8.
 
 (Update 2014.10.02): A case study based on this work was published and accessible at <https://enterprise.microsoft.com/en-us/customer-story/industries/health/wellness-company-promotes-active-lifestyles-with-tablet-app-wearable-motion-trackers/>
 

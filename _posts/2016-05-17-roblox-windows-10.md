@@ -4,8 +4,6 @@ title:  "Roblox Universal Windows Platform App"
 date:   2016-05-17 12:00:00 -0700
 ---
 
-Another one of my current engagements have come to fruition. This was a fun one to work on.
-
 ![Roblox Windows](/assets/20060517-roblox-windows.png)
 
 Roblox is a massively multiplayer online game created and marketed toward children and teenagers. In its immersive, 3D environment, players can create their own virtual world, in which they or other members may enter and socialize within the blocks of varying shapes, sizes, and colors. This user-generated online gaming platform has over 15 million games created by users, and millions of users playing the games.
