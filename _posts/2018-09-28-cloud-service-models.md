@@ -12,7 +12,7 @@ This is the (boring) story/recap of how this diagram came into existence. 😉
 
 ## 2008: Birth of Azure
 
-At the time of this writing, it is almost 10 years since the initial announcement of Microsoft Azure (at the time named "Windows Azure"), [by Ray Ozzie at the Microsoft Professional Developers Conference 2008](https://channel9.msdn.com/Blogs/pdc2008/KYN01) (PDC08) in Los Angeles on October 27, 2008. If you recall, at the time this is something mostly inconceivable that Microsoft would do. Afterall, only the cool kids on the block, Amazon and Google, seemed to be interested in cloud computing; plus take into account of the observation that a subscription-based revenue model potentially cannibalizes many of Microsoft's existing license-based products.
+At the time of this writing, it is almost 10 years since the initial announcement of Microsoft Azure (at the time named "Windows Azure"), [by Ray Ozzie at the Microsoft Professional Developers Conference 2008](https://channel9.msdn.com/Blogs/pdc2008/KYN01) (PDC08) in Los Angeles on October 27, 2008. If you recall, at that time this is something mostly inconceivable that Microsoft would do. Afterall, only the cool kids on the block, Amazon and Google, seemed to be interested in cloud computing; plus take into account of the observation that a subscription-based revenue model potentially cannibalizes many of Microsoft's existing license-based products.
 
 After the announcement, there was an incredible amount of interest in the community to learn about Azure. According to my notes, I alone had more than 300 meetings with organizations of all sizes in a 6-month period following the announcement.
 
@@ -61,7 +61,7 @@ And then this view was created (dated Jan. 15 2010):
 
 ![20100115](/assets/20180928-cloud-service-models-20100115.png)
 
-And then further flattening and simplifying the graphic design of the diagram, plus a few minor edits, such as changing "O/S" to "Operating System", and "On-Premises" to "Traditional IT" (as on-premises also incuded private cloud context so we needed to differentiate from that), we reached the final version shown below (same as the one at the top of this post). These versions was published and propagated via other sources, and as my presentation decks were mostly incremental technical detail updates, and so they were published to avoid too much duplication. It was later in 2011 that when I wrote about [cloud ecosystems]({{ site.baseurl }}{% post_url 2011-03-26-cloud-ecosystems %}) when I referenced this version below.
+And then further flattening and simplifying the graphic design of the diagram, plus a few minor edits, such as changing "O/S" to "Operating System", and "On-Premises" to "Traditional IT" (as on-premises also incuded private cloud context so we needed to differentiate from that), we reached the final version shown below (same as the one at the top of this post). These versions was published and propagated via other sources, and as my presentation decks were mostly incremental technical detail updates, and so they were not published to avoid too much duplication. It was later in 2011 that when I wrote about [cloud ecosystems]({{ site.baseurl }}{% post_url 2011-03-26-cloud-ecosystems %}) when I referenced this version below.
 
 ![20110226](/assets/20180928-cloud-service-models-20110226.png)
 
@@ -69,7 +69,7 @@ And then further flattening and simplifying the graphic design of the diagram, p
 
 Progress moves fast in this industry. It was soon after 2011 that our conversations shifted from explaining and justifying PaaS, towards primarily deeper discussions and engagements about real projects, and lines between IaaS and PaaS started to blur. It was increasingly more about composing capabilities into cloud projects, regardless which 'cloud model' a particular implementation uses. Application projects were composing services and features built on IaaS and PaaS options. It was no longer IaaS or PaaS; it was IaaS AND PaaS. Furthermore, there was increasing maturity around hybrid cloud approaches so even the lines with on-premises environments were blurring.
 
-Thus this diagram is no longer part of my standard cloud computing presentations. However, it continues to be referenced and used widely in cloud computing literature in many forms. Some of the core content has been updated frequently over the years, but it's interesting to see how this diagram is still being used by people today.
+Hence this diagram was no longer part of my standard cloud computing presentations. However, it continues to be referenced and used widely in cloud computing literature in many forms. Some of the core content has been updated frequently over the years, but it's interesting to see how this diagram is still being used by people today.
 
 A simple image search on "iaas paas" would yield hundreds of hits from all kinds of sources around the world, and many kinds of variations and flavors, and in different languages. Some people claimed to have created this view, while some credited "the Internet"; though it's kind of funny to see how this unit of work took on a life of its own.
 
