@@ -20,7 +20,7 @@ In one of the slide decks I used at the time (around November 2008 timeframe), t
 
 ![20081119](/assets/20180928-cloud-service-models-20081119.png)
 
-This was used to explain the platform-as-a-service (PaaS) approach Azure has available at the time. As you recall, Azure at the time only had Web Roles and Worker Roles (classic cloud services as categorized today) as primary compute options. These being services that operate in the PaaS model, we needed to rationalize/justify the fundamental differences in the PaaS model, compared to how people understood on-premises IT at the time. This diagram helped to articulate the trade-offs between the well-known models at the time: on-premises, outsourced hosting, and the (new) public cloud environments.
+This was used to explain the platform-as-a-service (PaaS) approach Azure implemented. As you recall, Azure at the time only had Web Roles and Worker Roles (classic cloud services as categorized today) as primary compute options. These being services that operate in the PaaS model, we needed to rationalize/justify the fundamental differences in the PaaS model, compared to how people understood on-premises IT at the time. This diagram helped to articulate the trade-offs between the well-known models at the time: on-premises, outsourced hosting, and the (new) public cloud environments.
 
 ## 2009: Concept Formation
 
@@ -61,7 +61,9 @@ And then this view was created (dated Jan. 15 2010):
 
 ![20100115](/assets/20180928-cloud-service-models-20100115.png)
 
-And then further flattening and simplifying the graphic design of the diagram, reached the final version shown at the top of this post. These 2010 versions was published and propagated via other sources, and as my presentation decks were mostly incremental technical detail updates, and so they were published to avoid too much duplication. It was later in 2011 that when I wrote about [cloud ecosystems]({{ site.baseurl }}{% post_url 2011-03-26-cloud-ecosystems %}) when I referenced this version.
+And then further flattening and simplifying the graphic design of the diagram, plus a few minor edits, such as changing "O/S" to "Operating System", and "On-Premises" to "Traditional IT" (as on-premises also incuded private cloud context so we needed to differentiate from that), we reached the final version shown below (same as the one at the top of this post). These versions was published and propagated via other sources, and as my presentation decks were mostly incremental technical detail updates, and so they were published to avoid too much duplication. It was later in 2011 that when I wrote about [cloud ecosystems]({{ site.baseurl }}{% post_url 2011-03-26-cloud-ecosystems %}) when I referenced this version below.
+
+![20110226](/assets/20180928-cloud-service-models-20110226.png)
 
 ## Today
 
