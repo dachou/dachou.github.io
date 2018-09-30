@@ -10,7 +10,7 @@ Guessing most of us have seen a version of the diagram that compares the cloud c
 
 This is the (boring) story/recap of how this diagram came to be. 😉
 
-## 2008: Birth of Azure
+## 2008: Hello, Azure
 
 At the time of this writing, it is almost 10 years since the initial announcement of Microsoft Azure (at that time named "Windows Azure"), [by Ray Ozzie at the Microsoft Professional Developers Conference 2008](https://channel9.msdn.com/Blogs/pdc2008/KYN01) (PDC08) on October 27, 2008. If you recall, at that time this is something almost inconceivable for Microsoft to do. Afterall, only the cool kids on the block, Amazon and Google, seemed to be interested in cloud computing. Plus, take into account of the observation that a subscription-based revenue model potentially cannibalizes many of Microsoft's existing license-based products.
 

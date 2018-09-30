@@ -16,7 +16,11 @@ To clarify - I don't think multiple inheritance is inherently 'bad'; I think it 
 
 From a design perspective, I am also intrigued by decisions to not add/include features, just as I do with features that are included. With multiple inheritance, I think it boils down to a 'simple' thought - the designers for Java and C# made the decision to not include it, for sake of simplicity.
 
-From another perspective, Java and C# were intended to support newer classes of applications and environments, thus different approaches were taken, and many represented departures from C++ (or - why invent a new language that essentially does the same as what C++ already does well at?), and many decisions were made based on lessons learned from complex C++ projects.
+**It was a design decision.**
+
+And like typical design decisions, it was a judgment call based on the assessment made by the design team, by weighing trade-offs between the merits and costs of a particular product feature. Especially important is how a particular feature is considered within the context of the overall system it participates in.
+
+From a systems perspective, Java and C# were intended to support newer classes of applications and environments, thus different approaches were taken, and many represented departures from C++ (or - why invent a new language that essentially does the same as what C++ already does well at?), and many decisions were made based on lessons learned from complex C++ projects. As a result of the collective design decisions, Java and C# are more different from C++, than similar, from a systems perspective.
 
 For example, for Java in 1995, James Gosling wrote these as design principles (today the document is at <http://www.oracle.com/technetwork/java/intro-141325.html>):
 - simple, object-oriented, and familiar
