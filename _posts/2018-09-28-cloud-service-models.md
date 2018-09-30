@@ -24,7 +24,7 @@ This was used to explain the platform-as-a-service (PaaS) approach Azure impleme
 
 ## 2009: Concept Formation
 
-The first diagram succinctly highlighted the major differences and helped people recognize that PaaS is different from outsourced hosting and on-premises IT. But it only addressed the topic at a surface layer; we often ended up spending more time discussing how and why PaaS is different. So we needed a different visualization to help support that part of the conversation. 
+The first diagram succinctly highlighted the major differences and helped people recognize that PaaS is different from outsourced hosting and on-premises IT. But it only addressed the topic at a surface layer; we often ended up spending more time discussing how and why PaaS is different - not just with on-premises, but IaaS as well. So we needed a different visualization to help support that part of the conversation. 
 
 We needed a diagram/graphic/model, or visual representation, that:
 - is simple and easy to understand (basically at first glance)
