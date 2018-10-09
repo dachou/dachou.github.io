@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  {{ content }}
+
+    <h2>Presentations</h2>
+    <ul style="list-style:none">
+      {%- for preso in site.data.presentations -%}
+      <li>
+        {%- assign date_format = site.minima.date_format | default: "%d %b %Y" -%}
+        <span class="post-meta" style="font-family: 'Courier New', Courier, monospace">{{ preso.date }}</span> &raquo;  
+        <a href="{{ preso.link }}">{{ preso.desc }}</a> 
+        <span class="post-meta">({{preso.event}} - {{preso.location}})</span>
+      </li>
+      {%- endfor -%}
+    </ul>
+
+</div>
