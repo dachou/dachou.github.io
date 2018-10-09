@@ -1,8 +1,182 @@
+- date: 04 DEC 2017
+  event: ISV Innovation Series
+  location: Los Angeles
+  desc: Designing Artificial Intelligence
+  link: https://dachou.github.io/2017/12/04/artificial-intelligence-webcasts.html
+
+- date: 14 SEP 2017
+  event: ISV Innovation Series
+  location: Los Angeles
+  desc: Microsoft AI Platform
+  link: https://www.slideshare.net/davidcchou/microsoft-aiplatform
+
+- date: 24 AUG 2017
+  event: ISV Innovation Series
+  location: Boston
+  desc: Artificial Intelligence (Design)
+  link: https://wcc.on24.com/webcast/previewlobby?e=1476054&k=F1D2269C037ABCA57F3C57DCECFB24D4 
+
+- date: 22 AUG 2017
+  event: ISV Innovation Series
+  location: Los Angeles
+  desc: Natural Computer Interactions
+  link: https://event.on24.com/wcc/r/1485833/F8C3E1833A1A0BD2C63BA7966330CFE3
+
+- date: 17 AUG 2017
+  event: ISV Innovation Series
+  location: Los Angeles
+  desc: Artificial Intelligence (Envision)
+  link: https://event.on24.com/wcc/r/1476052/FBCCC9DF6D0FA8A67D8ED15AFB7CCFE0
+
+- date: 28 MAR 2017
+  event: ISV Innovation Series
+  location: Irvine
+  desc: Designing Microservices
+  link: https://www.slideshare.net/davidcchou/designing-microservices-114871184
+
+- date: 08 FEB 2017
+  event: ISV Innovation Series
+  location: Los Angeles
+  desc: Security in the Cloud
+  link: https://dachou.github.io/2017/02/19/security-in-the-cloud.html
+
+- date: 11 NOV 2013
+  event: Devoxx 2013
+  location: Antwerp, Belgium
+  desc: Mobile and Cloud Application Development with Windows Phone and Windows Azure
+  link: http://devoxx.be/dv13-david-chou.html?presId=3755
+
+- date: 23 APR 2012
+  event: Windows Developer Event
+  location: Nokia Theater, Los Angeles
+  desc: Building JavaScript App Using WinRT
+  link: 
+
+- date: 02 NOV 2011
+  event: NLJUG J-Fall 2011
+  location: Amsterdam, Netherlands
+  desc: Building Highly Scalable Java Applications on Windows Azure
+  link: 
+
+- date: 04 OCT 2011
+  event: JavaOne 2011
+  location: San Francisco
+  desc: Architectural Design Patterns for Java in Windows Azure
+  link: 
+
+- date: 17 MAY 2011
+  event: Microsoft TechEd
+  location: Atlanta
+  desc: Combining Private and Public Clouds into Meaningful Hybrids
+  link: https://www.slideshare.net/davidcchou/combining-private-and-public-clouds-into-meaningful-hybrids
+
+- date: 08 MAR 2011
+  event: CloudConnect 2011
+  location: Santa Clara
+  desc: Building Highly Scalable Java Applications on Windows Azure
+  link: https://www.slideshare.net/davidcchou/cloudconnect-2011-building-highly-scalable-java-applications-on-windows-azure
+
+- date: 12 FEB 2011
+  event: JavaGruppen Årskonference 2011
+  location: Billund, Denmark
+  desc: Building Highly Scalable Java Applications on Windows Azure
+  link: https://www.slideshare.net/davidcchou/java-on-windows-azure
+
+- date: 01 NOV 2010
+  event: Cloud Computing Expo
+  location: Santa Clara
+  desc: Java on Windows Azure
+  link: https://www.slideshare.net/davidcchou/java-on-windows-azure-cloud-computing-expo-2010
+
+- date: 06 OCT 2010
+  event: SOA & Cloud Symposium 2010
+  location: Berlin, Germany
+  desc: Architecting Cloudy Applications
+  link: https://www.slideshare.net/davidcchou/architecting-cloudy-applications
+
+- date: 05 OCT 2010
+  event: SOA & Cloud Symposium 2010
+  location: Berlin
+  desc: Scale as a Competitive Advantage
+  link: https://www.slideshare.net/davidcchou/scale-as-a-competitive-advantage
+
+- date: 21 SEP 2010
+  event: JavaOne 2010
+  location: San Francisco
+  desc: Building Highly Scalable Java Applications on Windows Azure
+  link: https://www.slideshare.net/davidcchou/building-highly-scalable-java-applications-on-windows-azure-20100921
+
+- date: 04 MAY 2010
+  event: Web 2.0 Expo 2010
+  location: San Francisco
+  desc: Kelley Blue Book and Cloud Computing
+  link: https://www.slideshare.net/davidcchou/kelley-blue-book-and-cloud-computing
+
+- date: 01 DEC 2009
+  event: Architect Council
+  location: Denver, Los Angeles, Mountain View, Phoenix, San Diego, San Francisco, Seattle
+  desc: Microsoft Azure Platform
+  link: https://www.slideshare.net/davidcchou/windows-azure-platform-2647184
+
+- date: 01 DEC 2009
+  event: Architect Council
+  location: Denver, Los Angeles, Mountain View, Phoenix, San Diego, San Francisco, Seattle
+  desc: Architecting Solutions Leveraging the Cloud
+  link: https://www.slideshare.net/davidcchou/architecting-solutions-leveraging-the-cloud
+
+- date: 01 DEC 2009
+  event: Architect Council
+  location: Denver, Los Angeles, Mountain View, Phoenix, San Diego, San Francisco, Seattle
+  desc: SOA and Cloud Computing
+  link: https://www.slideshare.net/davidcchou/soa-and-cloud-computing-2647186
+
+- date: 31 OCT 2009
+  event: Windows Azure World Tour
+  location: Los Angeles
+  desc: Architecting For The Windows Azure Platform
+  link: https://www.slideshare.net/davidcchou/architecting-for-the-windows-azure-platform
+
+- date: 30 SEP 2009
+  event: CloudCamp LA
+  location: Los Angeles
+  desc: What is Windows Azure Platform
+  link: https://www.slideshare.net/davidcchou/windows-azure-platform-lightning-talk
+
+- date: 01 JUN 2009
+  event: Architect Council
+  location: Los Angeles
+  desc: Patterns for Parallel Computing
+  link: https://www.slideshare.net/davidcchou/patterns-for-parallel-computing
+
+- date: 19 MAY 2009
+  event: INTEROP
+  location: Las Vegas
+  desc: Clients Still Matter
+  link: 
+
+- date: 24 MAR 2009
+  event: Architect Council
+  location: Denver, Los Angeles, Mountain View, San Diego, San Francisco, Seattle
+  desc: Patterns of Cloud Applications Using Microsoft Azure Services Platform
+  link: https://www.slideshare.net/davidcchou/patterns-of-cloud-applications-using-microsoft-azure-services-platform
+
 - date: 19 MAR 2009
   event: Cal State Fullerton
   location: Los Angeles
   desc: Business Architecture & SOA Patterns
   link: 
+
+- date: 04 DEC 2008
+  event: Architect Council
+  location: Denver, Los Angeles, Phoenix, San Diego, San Franciso, Seattle
+  desc: Azure Services Platform
+  link: https://www.slideshare.net/davidcchou/azure-services-platform-presentation
+
+- date: 04 DEC 2008
+  event: Architect Council
+  location: Denver, Los Angeles, Phoenix, San Diego, San Franciso, Seattle
+  desc: Microsoft and Cloud Computing
+  link: https://www.slideshare.net/davidcchou/microsoft-and-cloud-computing-presentation
 
 - date: 30 NOV 2008
   event: Strategi Architect Forum 2008 (SAF08)
