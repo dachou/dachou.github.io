@@ -56,7 +56,7 @@ Fundamentally, cloud-optimized architecture is one that favors smaller and loose
 
 I like using the LEGO analogy below. From this perspective, the “small pieces, loosely coupled” fundamental design principle is sort of like building LEGO sets. To build bigger sets (from a scaling perspective), with LEGO we’d simply use more of the same pieces, as opposed to trying to use bigger pieces. And of course, the same pieces can allow us to scale down the solution as well (and not having to glue LEGO pieces together means they’re loosely coupled). 
 
-[Use more pieces, not bigger pieces](/assets/20100930-lego.png)
+![Use more pieces, not bigger pieces](/assets/20100930-lego.png)
 
 But this architecture also has some distinct impacts to the way we develop applications. For example, a set of distributed computing best practices emerge:
 - asynchronous processes (event-driven design) 
@@ -67,7 +67,7 @@ But this architecture also has some distinct impacts to the way we develop appli
 - fault-tolerance by redundancy and replication 
 etc. 
 
-[scale-out architecture](/assets/20100930-scaleout.png)
+![scale-out architecture](/assets/20100930-scaleout.png)
 
 **Asynchronous, event-driven design** – This approach advocates off-loading as much work from user requests as possible. For example, many applications just simply incur the work to validate/store the incoming data and record it as an occurrence of an event and return immediately. In essence it’s about divvying up the work that makes up one unit of work in a traditional monolithic architecture, as much as possible, so that each component only accomplishes what is minimally and logically required. Rest of the end-to-end business tasks and processes can then be off-loaded to other threads, which in cloud platforms, can be distributed processes that run on other servers. This results in a more even distribution of load and better utilization of system resources (plus improved perceived performance from a user’s perspective), thus enabling simpler scale-out scenarios as additional processing nodes and instances can be simply added to (or removed from) the overall architecture without any complicated management overhead. This is nothing new, of course; many applications that leverage Web-oriented architectures (WOA), such as Facebook, Twitter, etc., have applied this pattern for a long time in practice. Lastly, of course, this also aligns well to the common stateless “requirement” in the current class of cloud platforms.
 

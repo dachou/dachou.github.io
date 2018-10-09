@@ -10,7 +10,7 @@ Guessing most of us have seen a version of the diagram that compares the cloud c
 
 This is the (boring) story/recap of how this diagram came to be. 😉
 
-## 2008: Birth of Azure
+## 2008: Hello, Azure
 
 At the time of this writing, it is almost 10 years since the initial announcement of Microsoft Azure (at that time named "Windows Azure"), [by Ray Ozzie at the Microsoft Professional Developers Conference 2008](https://channel9.msdn.com/Blogs/pdc2008/KYN01) (PDC08) on October 27, 2008. If you recall, at that time this is something almost inconceivable for Microsoft to do. Afterall, only the cool kids on the block, Amazon and Google, seemed to be interested in cloud computing. Plus, take into account of the observation that a subscription-based revenue model potentially cannibalizes many of Microsoft's existing license-based products.
 
@@ -24,7 +24,7 @@ This was used to explain the platform-as-a-service (PaaS) approach Azure impleme
 
 ## 2009: Concept Formation
 
-The first diagram succinctly highlighted the major differences and helped people recognize that PaaS is different from outsourced hosting and on-premises IT. But it only addressed the topic at a surface layer; we often ended up spending more time discussing how and why PaaS is different. So we needed a different visualization to help support that part of the conversation. 
+The first diagram succinctly highlighted the major differences and helped people recognize that PaaS is different from outsourced hosting and on-premises IT. But it only addressed the topic at a surface layer; we often ended up spending more time discussing how and why PaaS is different - not just with on-premises, but IaaS as well. So we needed a different visualization to help support that part of the conversation. 
 
 We needed a diagram/graphic/model, or visual representation, that:
 - is simple and easy to understand (basically at first glance)
@@ -45,14 +45,14 @@ The visual design implied that:
 
 (as a side note) The inter-layer dependency and separation of concern aspect is often lost when trying to use other models to visualize this stack relationship, such as [pizza-as-a-service](https://www.linkedin.com/pulse/20140730172610-9679881-pizza-as-a-service/) and [car-as-a-service](https://community.dynamics.com/365/financeandoperations/b/axtipsandtricks/archive/2016/07/14/what-is-cloud-and-what-are-iaas-paas-and-saas). To me these analogies make the diagram more interesting, but they ended up missing an important part of the context.
 
-And the use of hot coloring (red slices) vs. cool coloring, and number of layers highlighted per model, were all intended to visually call out, and illustrate the scale in differences (e.g., on-premises has 9 red layers, IaaS has 4, and PaaS has just 1 - suggesting that they are more different than they are similar).
+And the use of hot coloring (red slices) vs. cool coloring, and number of layers highlighted per model, were all intended to visually call out, and illustrate the scale in differences (e.g., on-premises has 9 red layers, IaaS has 4, and PaaS has just 1 - suggesting that they are more different than they are similar; oh, and PaaS is more 'cool').
 
 As this view gained traction, a version of it was published on [Slideshare (dated Jun 9 2009)](https://www.slideshare.net/davidcchou/patterns-of-cloud-applications-using-microsoft-azure-services-platform). Along with this car analogy which mapped to the same 3-column structure to help people relate to the impact of the differences in these models.
 
 ![analogy](/assets/20180928-cloud-service-models-20090526-analogy.png)
 
-The talking points for this analogy were:
-- On-premises: is like owning your cars - you can go anywhere you want at anytime (full **control**), in a fully-paid car make/model/color/trim of your choice, but you'd be responsible for its maintenance
+The high-level talking points for this analogy were:
+- On-premises: is like owning your cars - you can go anywhere you want at anytime (full **control**), in a car make/model/color/trim of your choice, but you own the car and you're responsible for its maintenance
 - IaaS: is like a car rental service - you still can go anywhere you want at anytime, with some limits in car choices, but you don't have to maintain the vehicles; just take the keys and go
 - PaaS: is like public transportation - you can go to places as defined/limited by available routes and schedules, but it's easy to use and pay-per-use (full **economies of scale**)
 
@@ -80,7 +80,7 @@ These versions were published and propagated via many sources, and as my present
 
 ## Today
 
-Progress moves fast in this industry. Conversations soon shifted from explaining and justifying PaaS, towards primarily deeper discussions and engagements about real development projects. Lines between IaaS and PaaS started to blur even before Azure made Virtual Machines available in 2012 (Azure had VM Roles since 2010 but they're not the same). It was increasingly more about composing capabilities into cloud projects, regardless which 'cloud model' was used by a particular implementation (e.g., API, component, feature, service, etc.). Application projects were composing services and features built on both IaaS and PaaS options. It was no longer IaaS or PaaS; it was IaaS AND PaaS AND SaaS. Furthermore, there was increasing maturity around hybrid cloud approaches so even the lines with on-premises environments were blurring.
+Progress moves fast in this industry. Conversations soon shifted from explaining and justifying PaaS, towards primarily deeper discussions and engagements about real development projects. Lines between IaaS and PaaS started to blur even before Azure made Virtual Machines available in 2012 (Azure had VM Roles since 2010 but it's not exactly IaaS). It was increasingly more about composing capabilities into cloud projects, regardless which 'cloud model' was used by a particular implementation (e.g., API, component, feature, service, etc.). Application projects were composing services and features built on both IaaS and PaaS options. It was no longer IaaS or PaaS; it was IaaS AND PaaS AND SaaS. Furthermore, there was increasing maturity around hybrid cloud approaches so even the lines with on-premises environments were blurring.
 
 Hence this diagram was no longer part of my standard cloud computing presentations. However, it continues to be referenced and used widely in cloud computing literature in many forms. Some of the core content has been updated frequently over the years, but it's interesting to see how this diagram is still being used by people today.
 
