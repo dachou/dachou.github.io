@@ -11,14 +11,33 @@ layout: default
       <li name="{%- increment var -%}">
         {%- assign date_format = site.minima.date_format | default: "%d %b %Y" -%}
         <span class="post-meta" style="font-family: 'Courier New', Courier, monospace">{{ post.date | date: date_format }}</span> &raquo;<br>
-        <span style="font-size:22px"><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></span>
+        <span style="font-size:28px"><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></span>
         {{ post.excerpt }}
+        <a href="{{ post.url | relative_url }}">(more...)</a>
       </li>
       <br>
       {%- endif -%}
     {%- endfor -%}
     </ul>
   {%- endif -%}
+
+  <h2>Most Viewed Posts</h2>
+  <ul style="list-style:none">
+    {%- for post in site.data.top-posts -%}
+    <li>
+      <span class="post-meta" style="font-family: 'Courier New', Courier, monospace">{{ post.date }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+    {%- endfor -%}
+  </ul>
+
+  <h2>Most Viewed / Latest Presentations</h2>
+  <ul style="list-style:none">
+      {%- for post in site.data.top-presos -%}
+      <li>
+        <span class="post-meta" style="font-family: 'Courier New', Courier, monospace">{{ post.date }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+      {%- endfor -%}
+  </ul>
 
 {{ content }}
 

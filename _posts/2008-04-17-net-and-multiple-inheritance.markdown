@@ -4,6 +4,8 @@ title:  ".NET and Multiple Inheritance"
 date:   2008-04-17 12:00:00 -0700
 ---
 
+(added thoughts in a more recent post - [Multiple Inheritance]({{ site.baseurl }}{% post_url 2018-09-13-multiple-inheritance %}))
+
 Occasionally I get questions on why does .NET not support multiple inheritance. It is actually a pretty interesting question to contemplate with, though I usually start the conversation by asking: "what issue requires multiple inheritance to solve?".
 
 More often than not, the question surfaces when people are trying to "do the right thing" by correctly refactoring code in an object-oriented manner, and facilitate code reuse by using inheritance, but encounter challenges when trying to reuse methods and code behaviors defined in separate places of the class hierarchy. Thus the most "natural" question was, if I can just inherit the code from these classes...

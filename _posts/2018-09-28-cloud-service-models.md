@@ -78,7 +78,7 @@ And then further flattening and simplifying the graphic design of the diagram, p
 
 ![20110226](/assets/20180928-cloud-service-models-20110226.png)
 
-These versions were published and propagated via many sources, and as my presentation decks were mostly incremental technical detail updates, they were not published to avoid too much duplication (since I already have too many Azure overview decks on Slideshare). It was later in 2011 when I wrote about [cloud ecosystems]({{ site.baseurl }}{% post_url 2011-03-26-cloud-ecosystems %}) this final version was referenced.
+These versions were published and propagated via many sources, and as my presentation decks were mostly incremental technical detail updates, they were not published to avoid too much duplication (since I already have too many Azure overview decks on Slideshare). It was later in 2011 when I wrote about [cloud ecosystems]({{ site.baseurl }}{% post_url 2011-03-16-cloud-ecosystems %}) this final version was referenced.
 
 ## Today
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Rise of the Cloud Ecosystems"
-date:   2011-03-26 12:00:00 -0700
+date:   2011-03-16 12:00:00 -0700
 ---
 
 I had the opportunity to participate at this year’s [CloudConnect](http://cloudconnectevent.com/) conference, with my session on [Building Highly Scalable Applications on Windows Azure](http://www.slideshare.net/davidcchou/cloudconnect-2011-building-highly-scalable-java-applications-on-windows-azure), which is mostly an update from my earlier presentations at JavaOne and Cloud Computing Expo. I was pleased to learn that the cloud-optimized design leveraging distributed computing best practices approach, aligned well to similar talks by well-known cloud experts from Amazon, Google, etc. A more detailed discussion on this topic can be found in my earlier post - [Designing for Cloud-Optimized Architecture]({{ site.baseurl }}{% post_url 2011-01-23-designing-for-cloud-optimized-architecture %}).
