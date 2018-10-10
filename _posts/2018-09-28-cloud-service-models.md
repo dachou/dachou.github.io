@@ -2,6 +2,7 @@
 layout: post
 title:  "Cloud Service Models (IaaS, PaaS, SaaS) Diagram"
 date:   2018-09-28 12:00:00 -0700
+excerpt_separator: <!--more-->
 ---
 
 Guessing most of us have seen a version of the diagram that compares the cloud computing service models (IaaS, PaaS, SaaS) and on-premises environments, sometime within the past few years? You know, the one that uses a visualization of four software (layer cake) stacks to describe the differences between infrastructure, platform, and software "-as-a-service" models as described in [The NIST Definition of Cloud Computing](https://csrc.nist.gov/publications/detail/sp/800-145/final)?
@@ -9,6 +10,7 @@ Guessing most of us have seen a version of the diagram that compares the cloud c
 ![cloud service models](/assets/20110326-cloudmodels.png)
 
 This is the (boring) story/recap of how this diagram came to be. 😉
+<!--more-->
 
 ## 2008: Hello, Azure
 

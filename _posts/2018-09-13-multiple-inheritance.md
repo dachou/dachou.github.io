@@ -2,11 +2,13 @@
 layout: post
 title:  "Multiple Inheritance"
 date:   2018-09-13 12:00:00 -0700
+excerpt_separator: <!--more-->
 ---
 
 It was back in 2008 when I first wrote about [.NET and Multiple Inheritance]({{ site.baseurl }}{% post_url 2008-04-17-net-and-multiple-inheritance %}). Since then I have received many feedback (some were particularly pointed), though kind of amazed that this is still a subject of debate even today.
 
 ![multiple inheritance](/assets/20180913-class-multiple-inheritance.png)
+<!--more-->
 
 _(from <https://www.uml-diagrams.org/generalization.html>)_
 
