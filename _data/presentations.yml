@@ -46,6 +46,12 @@
   desc: Mobile and Cloud Application Development with Windows Phone and Windows Azure
   link: http://devoxx.be/dv13-david-chou.html?presId=3755
 
+- date: 28 NOV 2012
+  event: Generation App
+  location: Seattle
+  desc: Developing Windows 8 Apps
+  link: https://youtu.be/n80AMWYJDeA
+
 - date: 23 APR 2012
   event: Windows Developer Event
   location: Nokia Theater, Los Angeles
@@ -111,6 +117,12 @@
   location: San Francisco
   desc: Kelley Blue Book and Cloud Computing
   link: https://www.slideshare.net/davidcchou/kelley-blue-book-and-cloud-computing
+
+- date: 12 FEB 2010
+  event: Microsoft PDC 2009
+  location: Los Angeles
+  desc: Windows Azure - Microsoft employee interview
+  link: https://youtu.be/mxRjVn1tAEU
 
 - date: 01 DEC 2009
   event: Architect Council
