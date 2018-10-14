@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Event-Driven Serverless Architecture Design"
-date:   2018-10-14 12:00:00 -0700
+date:   2018-10-15 12:00:00 -0700
 excerpt_separator: <!--more-->
 ---
 
