@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Event-Driven Serverless Architectures"
-date:   2018-10-16 12:00:00 -0700
+date:   2018-10-15 12:00:00 -0700
 excerpt_separator: <!--more-->
 ---
 
@@ -88,25 +88,53 @@ Of course, technically we can still have the service implementation to define ho
 
 The design of workflows or logical processes in an event-driven architecture should land in a choreography model, as opposed to an orchestration model.
 
-An orchestration model points to a centralized process-driven view of sequential workflow, mostly aligned with synchronous request/response process that tightly manages the end-to-end execution of logic and interaction with resources to complete a transaction. A choreography model points to independent services that work in tandem and reacting to events separately (or in parallel) to accomplish a logical task. The subtle difference is that orchestration is a process-centric view, vs. choregraphy is a resources and functions-oriented view.
+An orchestration model points to a centralized process-driven view of sequential workflow, mostly aligned with synchronous request/response process that tightly manages the end-to-end execution of logic and interaction directly with resources and services to complete a transaction. A choreography model points to independent services that observe the system and react to events autonomously, to accomplish a logical task collectively. The subtle difference is that orchestration is a process-centric view, vs. choregraphy is a resources and functions-oriented view.
 
 Basically, this highlights the thought to resist the urge to design workflows as traditional sequential (or in a way, monolithic) process in a service implementation. Rather, approach the design from the use of resources needed for a task, then logic in functions to interact with the resources, and invoked via events. Consequently, a logical transaction in an event-driven architecture may result in the execution of multiple parallel tasks activated by events that represent changes in resources. These tasks have no knowledge of each other's execution and implementation details, but the collective result of their work accomplishes the intended output of a user/system transaction.
 
 ### Composition over Integration
 
+The design of interactions between resources and functions should use more of a service composition approach, than service integration.
 
+Service integration approaches tend to land in synchronous interactions that are tightly coupled, and sometimes need to embed client SDK's to abstract the service API implementation, which also ends up tightly coupling the service implementation. Instead, leverage the function platforms built-in capabilities to abstract service implementations as input and output bindings. Bindings provide a declarative way to connect to resources in a system, so that function implementations can avoid including details of the resources and their service API's.
+
+Integration solutions still play a significant role in the system. What this principle advocates is to be mindful of when/where which of these patterns/models are applied in the architecture design.
+
+Abstracting resource communication details into declarative bindings is a mechanism to accomplish a form of loose coupling. It enables agile changes in how resources are used and accessed, and moves development focus towards designing workflows that compose of various resources and services. A compositive system provides higher agility to respond to business and technical changes, and enables an end-to-end system to be managed as a tangible product (not just the user-facing assets), responding to customer demand quickly and effectively. This is the key benefit for adopting cloud-native serverless platforms, especially when balanced against relevant design trade-offs.
 
 ## A Simple Example
 
+Here we walk through an over-simplified view of how an event-driven serverless architecture differs from a monolithic architecture.
+
 ![monolithic](/assets/20181015-monolithic-arch.png)
+
+We start with a typical web app view of a monolithic application, with these characteristics:
+- **Monolithic application**: all functions of this application is bundled together and is hosted in an App Server process, with hard dependencies on other resources such as a Web Server frontend, file storage (local or mounted distributed disks), and a centralized database in another server tier. Modular design or forms of loose coupling can be achieved, but mostly encapsulated within the confines of the monolithic application process, and changes are typically released as updates to the entire implementation
+- **Orchestration model**: the server process is invoked in a synchronous request/response model, and directly controls/manages the flow of application logic and use of resources and external services (Cognitive Services in this view) to accomplish the unit of work
+- **Centralized state**: data and state are managed by centralized resources and shared between application processes. Reuse is a key benefit
+- **Integration model**: code, components, processes, and resources are tightly coupled end-to-end in a synchronous and sequential processing model
+
+This application, when implemented using an event-driven serverless architecture, could look like this.
 
 ![serverless](/assets/20181015-event-driven-arch.png)
 
+And similaraly, this serverless implementation has these characteristics:
+- **Microservices application**: functions are decomposed into independent services reacting to events autonomously, that operate on immutable infrastructure which plays the role of traditional server environments (but abstracted into a cloud environment; not individual servers)
+- **Choreography model**: work in this system is accomplished in a non-linear model; services get activated as conditions/changes (or events) arise. There is no longer a traditional sequential workflow view, but the collective results of the autonomous services and resources accomplish the unit of work
+- **Distributed state**: data and state are managed by distributed resources (e.g., cient state in the single page app (SPA), files in Blob Storage, modularized and domain-specific data in Cosmos DB, etc.). No compute resources are allocated for state and data maintenance resources (e.g., no need for an FTP process/server, file server, provisioned database server, etc.; these are now all resources aligned to the serverless model with similar on-demand consumption-based cost models)
+- **Composition model**: functions and resources interact with each other with communication and connection details abstracted, enabling quick composition of new services and resources to bring value to market faster, and experimentation scenarios
 
-## Benefits and Challenges
+## A Few More Thoughts
 
-experimentation, versioning
-bundle tasks around aggregates boundaries, consistent data together
-arbitrage over different charging models
-file upload to server using cycles
-request-level authorization
+An event-driven serverless architecture is not without its trade-offs. It isn't suitable for all application scenarios such as ones with long-running jobs, processes with high memory requirements, workloads that require predictable performance, require re-architecting applications into minimal-latency microservices, etc. And a highly distributed architecture inherently distributes points of control and escalates system complexity, which correspondingly increases challenges in the operations and management of an end-to-end architecture.
+
+There are some similarities to the discussion and comparison between monolithic kernels and microkernels in the operating systems design domain. Monolithic kernels, even though larger and more prone to errors (something crashes and can impact the entire process), have better performance (because everything is kept in the same address space) and are simpler to maintain (require less code). Microkernels run user and kernel services in different processes (different address space; distributed processes), so they are less prone to errors (better isolation and more secure) and updates are componentized (localized), but execute slower and more complex to maintain (require more code). Design trade-offs, essentially; and similar comparisons can be drawn between monolithic application and microservices application architectures.
+
+Specifically with event-driven serverless architectures, there are additional areas that are worth exploring, such as those below; but we will save them for another time:
+- Security
+- Performance
+- Operations (the Ops in DevOps; as function platforms make the Dev part simpler, but not the Ops part)
+- Organizational culture and team dynamics
+- Economics and business case
+
+Thus, serverless computing isn't a replacement to other models in modern computing; it is another option in the toolbelt, that when implemented effectively against suitable scenarios, can create significant and distinct value. Improved resiliency and scalability, and improved agility and faster time to market, are benefits of serverless computing that are especially relevant to the modern class of application scenarios.
