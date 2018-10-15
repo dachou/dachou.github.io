@@ -5,7 +5,7 @@ date:   2018-10-15 12:00:00 -0700
 excerpt_separator: <!--more-->
 ---
 
-Serverless - the latest and most 'cloud-native' approach to developing applications, offers increased agility, improved resilience and scalability, and a pure on-demand consumption-based cost model (though not without its trade-offs). However, to truly realize those benefits and to deliver more advanced outcomes, we should look beyond the relatively narrow focus on Functions-as-a-Service (FaaS; or related variants such as BaaS (Backend), fPaaS (Function Platform), etc.). Basically, it is worthwhile to approach serverless from an architectural perspective; and more specifically, with event-driven serverless architectures.
+Serverless - the latest and most 'cloud-native' approach to developing applications, offers increased agility, improved resilience and scalability, and a pure on-demand consumption-based cost model. However, to truly realize those benefits and to deliver more advanced outcomes, we should look beyond the relatively narrow focus on Functions-as-a-Service (FaaS; or related variants such as BaaS (Backend), fPaaS (Function Platform), etc.). Basically, it is worthwhile to approach serverless from an architectural perspective; and more specifically, with event-driven serverless architectures.
 
 ![event-driven architecture](/assets/20181015-event-driven.png)
  <!--more-->
@@ -14,7 +14,7 @@ The focus on FaaS and the related considerations are still useful, as FaaS can b
 
 ## Architecture Design Principles
 
-Now this isn't a brand new concept, as serverless computing builds upon microservices and domain-driven design, which builds upon service-oriented architectures (SOA) and [event-driven architecture]({{ site.baseurl }}{% post_url 2008-11-10-using-events-in-highly-distributed-architectures %}) (EDA), which build upon distributed computing best practices, etc. So a lot of the design fundamentals and best practices from the past still apply. Here are some that have some unique elements and/or especially interesting to serverless computing.
+Now this isn't a brand new concept, as serverless computing builds upon microservices and domain-driven design, which builds upon service-oriented architectures (SOA) and [event-driven architecture]({{ site.baseurl }}{% post_url 2008-11-10-using-events-in-highly-distributed-architectures %}) (EDA), which build upon distributed computing best practices, etc. So a lot of the design fundamentals and best practices from the past still apply. Here we discuss a couple that have some unique elements and/or especially interesting to serverless computing.
 - Events over Functions
 - Microservices over Monoliths
 - Meta over Data
@@ -34,7 +34,7 @@ That is, loose coupling is key to enabling more smaller components to work effec
 
 ![lego](/assets/20100930-lego.png)
 
-Or, one more analogy with LEGO bricks - we can easily see how the regular LEGO bricks (~4,000 parts) are more flexible and scalable (in terms of the things we can build), than the fewer and larger Duplo bricks. Similarly with serverless computing - we get more agility from a loosely coupled system made up of many fine-grained services. This is consistent with 
+Or, one more analogy with LEGO bricks - we can easily see how the regular LEGO bricks (~4,000 parts) are more flexible and scalable (in terms of the things we can build), than the fewer and larger Duplo bricks. Similarly with serverless computing - we get more agility from a loosely coupled system made up of many fine-grained services. 
 
 Thus from a design perspective, taking an events-first approach helps to drive towards an event-driven architecture, which leads into many of the principles below. This means thinking about organizing application logic as reactive elements to events, where events can represent a change in state (e.g., something happened), or a task submission (e.g., do something). This then leads into functional design, which is a different sequence than when a functions-first approach is used. The end result is a more loosely coupled architecture that looks like a set of discrete microservices operating indepdently, working directly with a number of resources (e.g., database, storage, service API's, etc.), and tied together by events that don't necessarily map to sequential workflows.
 
