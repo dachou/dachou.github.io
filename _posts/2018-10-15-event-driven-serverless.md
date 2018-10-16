@@ -14,7 +14,7 @@ The focus on FaaS and the related considerations are still useful, as FaaS can b
 
 ## Architecture Design Principles
 
-Now this isn't a brand new concept, as serverless computing builds upon microservices and domain-driven design, which builds upon service-oriented architectures (SOA) and [event-driven architecture]({{ site.baseurl }}{% post_url 2008-11-10-using-events-in-highly-distributed-architectures %}) (EDA), which build upon distributed computing best practices, etc. So a lot of the design fundamentals and best practices from the past still apply. Here we discuss a couple that have some unique elements and/or especially interesting to serverless computing.
+Now this isn't a brand new concept, as serverless computing builds upon microservices and domain-driven design, which builds upon service-oriented architectures (SOA) and [event-driven architecture]({{ site.baseurl }}{% post_url 2008-11-10-using-events-in-highly-distributed-architectures %}) (EDA), which build upon distributed computing best practices, etc. So a lot of the design fundamentals and best practices from the past still apply. Here we discuss a couple that have some unique elements and/or are especially interesting to serverless computing.
 - Events over Functions
 - Microservices over Monoliths
 - Meta over Data
