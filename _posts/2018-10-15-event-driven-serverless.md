@@ -48,9 +48,15 @@ Of course, we can still deploy monoliths into function platforms; just letting t
 
 Thus, many of the existing best practices in designing microservices apply in serverless computing as well. However, there are some differentiating aspects, such as the concept of decentralized data management, which microservices architectures advocate each 'service' to own and encapsulate its database and dependent services, and that other services in a system should not create 'back doors' to access those 'internal' resources directly.
 
-In event-driven serverless architectures, this could be slightly different as we can further decompose a 'service' down to multiple 'functions', where a set of functions may need to manage the same set of data. And to maintain a consistent level of serverless-ness, an architecture should use a common data management solution that aligns with serverless computing requirements (e.g., Azure Cosmos DB). In this case, it may be more effective to use a modular and/or sharded data design approach (e.g., decomposing the database down to smaller Collections and keeping certain data Collections mapped to a set of functions as an aggregate) instead of enforcing separate physical databases. And perhaps implement a quasi-CQRS model where all writes go through a specific function, but reads can be queried directly (via platform bindings) against the database; as long as an eventual consistency model is acceptable, since Azure Cosmos DB and highly distributed architectures like serverless advocate eventual consistency.
+In event-driven serverless architectures, this could be slightly different as we can further decompose a 'service' down to multiple 'functions', where a set of functions may need to manage the same set of data (which would be considered an 'aggregate'). And to maintain a consistent level of serverless-ness, the resources that functions use should aligns with serverless computing fundamentals as well (e.g., provisionless vs. provisioned resources).
 
-Thus, even though serverless computing favors a microservices design, we still need to carefully consider the granularity of individual functions and how data is managed; weighing trade-offs in service autonomy, change and service versioning management, scale and concurrency, value of agility, etc.
+By 'aggregate', we mean a set of functions and a set of data that represent a specific domain, and make up a bounded context; consistent with the similar concepts for microservices (or an 'aggregate' is kind of like a microservice).
+
+With aggregates, in larger systems we can implement them to help modularize the architecture, so that changes (in function code or data structure) can be isolated and localized in an aggregate without impacting the entire system. And of course, this means that functions outside of an aggregate should not have direct access (e.g., backdoors) to the resources mapped to an aggregate; access to an aggregate should go through function interfaces. For smaller systems and simpler applications, it's conceivable that a principled approach might add more overhead than benefits. In those cases it might be more effective to prioritize for agility and simplicity instead. Besides, this particular system can be managed as an aggregate later if/when participating in a larger architecture.
+
+Similarly, from a data management perspective, we may need to consider a modular and/or sharded data design approach (e.g., decomposing the database down to smaller collections and keeping certain data collections mapped to a set of functions as an aggregate) instead of enforcing separate physical databases for individual microservices. Serverless databases like Azure Cosmos DB help with this as it provides structures around databases/containers, collections, and partitions, and provides controls on throughput scaling factor, multiple data consistency levels (from eventual to strong), seamless geo-replication with multi-master support, etc. This helps with maintaining separate sets of data without increasing complexities in data management infrastructure.
+
+Thus, even though serverless computing favors a microservices design, we still need to carefully consider the granularity of individual functions (similar to service granularity considerations in SOA, and class/object granuarlity in OOP, etc.) and how data is managed. One difference for function platforms is that each invocation on a function incurs cost, so trade-offs in cost, performance, service autonomy, change and service versioning management, scale and concurrency, value of agility, etc. need to be considered when deciding whether a unit of work should be decomposed into separate functions, or bundled in one function.
 
 ### Meta over Data
 
@@ -134,6 +140,7 @@ Specifically with event-driven serverless architectures, there are additional ar
 - Security
 - Performance
 - Operations (the Ops in DevOps; as function platforms make the Dev part simpler, but not the Ops part)
+- Change and versioning management, and experimentation
 - Organizational culture and team dynamics
 - Economics and business case
 
