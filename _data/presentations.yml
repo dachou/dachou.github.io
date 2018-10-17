@@ -118,6 +118,12 @@
   title: Kelley Blue Book and Cloud Computing
   url: https://www.slideshare.net/davidcchou/kelley-blue-book-and-cloud-computing
 
+- date: 15 Mar 2010
+  event: Cloud Connect 2010
+  location: Santa Clara
+  title: Developing for Microsoft Windows Azure Platform
+  url: https://www.slideshare.net/davidcchou/architecting-solutions-leveraging-the-cloud
+
 - date: 12 Feb 2010
   event: Microsoft PDC 2009
   location: Los Angeles
@@ -129,12 +135,6 @@
   location: Denver, Los Angeles, Mountain View, Phoenix, San Diego, San Francisco, Seattle
   title: Microsoft Azure Platform
   url: https://www.slideshare.net/davidcchou/windows-azure-platform-2647184
-
-- date: 01 Dec 2009
-  event: Architect Council
-  location: Denver, Los Angeles, Mountain View, Phoenix, San Diego, San Francisco, Seattle
-  title: Architecting Solutions Leveraging the Cloud
-  url: https://www.slideshare.net/davidcchou/architecting-solutions-leveraging-the-cloud
 
 - date: 01 Dec 2009
   event: Architect Council
