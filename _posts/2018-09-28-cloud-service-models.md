@@ -74,7 +74,7 @@ And then this view was created (dated Jan. 15 2010), with a consistent 2-layer d
 
 ![20100115](/assets/20180928-cloud-service-models-20100115.png)
 
-And then further flattening and simplifying the graphic design of the diagram, plus a few minor edits, such as changing "O/S" to "Operating System", and "On-Premises" to "Traditional IT" (as on-premises also incuded private cloud context so we needed to differentiate from that), and slightly adjusting the 'managed by' lines to express a shared responsibility view for O/S in IaaS (cloud vendors provide the base VM image, but customers still need to maintain its patching and updates, etc.), we reached the final version shown below (same as the one at the top of this post).
+And then further flattening and simplifying the graphic design of the diagram, plus a few minor edits, such as changing "O/S" to "Operating System", and "On-Premises" to "Traditional IT" (as on-premises also included private cloud context so we needed to differentiate from that), and slightly adjusting the 'managed by' lines to express a shared responsibility view for O/S in IaaS (cloud vendors provide the base VM image, but customers still need to maintain its patching and updates, etc.), we reached the final version shown below (same as the one at the top of this post).
 
 ![20110226](/assets/20180928-cloud-service-models-20110226.png)
 
