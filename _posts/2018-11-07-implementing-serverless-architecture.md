@@ -16,21 +16,21 @@ In the [previous article]({{ site.baseurl }}{% post_url 2018-10-15-event-driven-
 
 This app allows users to upload images, then resizes it into a thumbnail image, calls the Computer Vision API in Cognitive Services to recognize its contents, and saves the metadata. The architecture is simple functionality-wise, though it has many typical and necessary elements of a real web application, and all implemented entirely in a serverless model.
 
-- **Web Server** – Blob Storage (GPv2) with the [static website hosting](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-static-website) feature is used to serve the HTML, CSS, and JavaScript files that make up the client application (single page app (SPA)). This is neat because we’re not using a persistent server process running 24/7 in a VM instance listening on a port waiting for client requests from a browser. All static files are served directly from Blob Storage directly
+- **Web Server** – Blob Storage (GPv2) with the [static website hosting](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-static-website) feature is used to serve the HTML, CSS, and JavaScript files that make up the client application (single page app (SPA)). This is neat because we’re not using a persistent server process running 24/7 in a VM instance listening on a port waiting for client requests from a browser. All static files are served from Blob Storage directly
 - **Application Service API’s** – the web app interacts with service API’s to access cloud-based functionalities, implemented as Function apps (in this case written using Node.js):
-    - *GetImages* – this is the frontend API for the client app to get a list of images and their metadata from Cosmos DB
-    - *GetUploadUrl* – when an image is to be uploaded, the client app calls this Function app via an HTTP trigger, which requests a [shared access signature](https://docs.microsoft.com/en-us/azure/storage/common/storage-dotnet-shared-access-signature-part-1) (SAS) token from Blob Storage and sends it back to the client app, to upload the image file directly into Blob Storage
-    - *ResizeImage* – this is the backend worker process that gets triggered by Blob Storage when a new file is uploaded into Blob Storage; it resizes the image into a thumbnail, saves it into Blob Storage, calls Cognitive Services to recognize the image, then saves the metadata into Cosmos DB
+    - *GetImages* – this is the frontend API for the client app to get a list of available images and their metadata from Cosmos DB
+    - *GetUploadUrl* – when a user wants to upload an image file, the client app calls this Function app via an HTTP trigger, which requests a [shared access signature](https://docs.microsoft.com/en-us/azure/storage/common/storage-dotnet-shared-access-signature-part-1) (SAS) token from Blob Storage and sends it back to the client app, to upload the image file directly into Blob Storage
+    - *ResizeImage* – this is the backend worker process that gets triggered by Blob Storage when a new image file is uploaded into Blob Storage; it resizes the image into a thumbnail, saves it into Blob Storage, calls Cognitive Services to recognize the image, then saves the metadata into Cosmos DB
 - **Database** – Cosmos DB
 - **File Storage** – Blob Storage
 
-The end-to-end architecture is serverless – that is, when idle (no users), no compute processes are allocated and running to wait for user input. The only resources that would incur charges when idle are the data and files in database and storage; compute resources would only incur charges when there are requests sent from client apps – with one exception being the Request Unit throughput level allocation in Cosmos DB which is charged by time.
+The end-to-end architecture is serverless – that is, when idle (no users), no compute processes are allocated and running to wait for user input. The only resources that would incur charges when idle are the data and files in database and storage; compute resources would only incur charges when there are requests sent from client apps. The only one exception being the Request Unit throughput level allocation in Cosmos DB which has a time-based factor in its billing meter.
 
-The architecture at this point is also highly resilient and highly scalable (from 0 to many users) without needing any configuration for auto-scaling or instances across fault domains; it’s all built-in to the services used. The only exception is the Request Unit throughput level allocation in Cosmos DB, which requires adjustment if more throughput is needed to accommodate significant changes in transaction volume.
+The architecture at this point is also highly resilient and highly scalable (from 0 to many users) without needing any configuration for auto-scaling or instances across fault domains; it’s all built-in to the services used. The only exception is the Request Unit throughput level allocation in Cosmos DB, which requires adjustment if more throughput is needed to accommodate significant changes in transaction volume (this can be automated too; we'd need to build some functionality to monitor the metrics and interact with Cosmos DB's service API's based on how the application should behave).
 
 ## Resource Provisioning
 
-The provisioning and configuration of various resources in a region can be scripted to help minimize errors, and provision additional sets of resources consistently. In this implementation, a Bash script invoking the [Azure CLI 2.0](https://docs.microsoft.com/en-us/cli/azure/?view=azure-cli-latest ) (command-line interface) is used, instead of the JSON-based ARM (Azure Resource Manager) templates. Shell scripting environments provide a lot of useful utilities, and CLI 2.0 has many rich features such as JMESPath queries, so the resulting scripts are pretty much infrastructure-as-code, which is pretty neat. Plus, Unix shell scripting is one of the earliest things I learned back in college, and now being able to run Bash scripts with the Windows Subsystem for Linux in Windows 10, or with the Cloud Shell in Azure Portal, provides a lot of flexibility to automate resource provisioning and management.
+The provisioning and configuration of various resources in a region can be scripted to help minimize errors, and provision additional sets of resources consistently. In this implementation, a Bash script invoking the [Azure CLI 2.0](https://docs.microsoft.com/en-us/cli/azure/?view=azure-cli-latest ) (command-line interface) is used, instead of the JSON-based ARM (Azure Resource Manager) templates. Shell scripting environments provide a lot of useful utilities, and CLI 2.0 has many rich features such as [JMESPath](http://jmespath.org/) queries, so the resulting scripts are pretty much infrastructure-as-code, which is pretty neat. Plus, with a personal bias towards Unix shell scripting, and now being able to run Bash scripts with the Windows Subsystem for Linux in Windows 10, or with the Cloud Shell in Azure Portal, provides a lot of flexibility to automate resource provisioning and management.
 
 Below is the Azure CLI Bash script used for provisioning resources used for this application architecture.
 
@@ -55,8 +55,6 @@ az storage account create -n $accountName -g $resourceGroupName \
 	--kind StorageV2 -l $location \
 	--https-only true \
 	--sku Standard_RAGRS
-az storage blob upload-batch -s . -d \$web \
-	--account-name $accountName
 az storage container create -n images \
 	--account-name $accountName \
 	--public-access blob
@@ -100,7 +98,7 @@ compVisionKey=$(az cognitiveservices account keys list \
 	-g $resourceGroupName -n $compVisionName \
 	--query key1 --output tsv)
 compVisionUrl=$(az cognitiveservices account show \
-    -g $resourceGroupName -n $compVisionName \
+	-g $resourceGroupName -n $compVisionName \
 	--query endpoint --output tsv)
 
 # Function
@@ -112,14 +110,14 @@ az functionapp config appsettings set -n $functionName -g $resourceGroupName \
 	--settings AZURE_STORAGE_CONNECTION_STRING=$blobConnection -o table
 az functionapp config appsettings set -n $functionName -g $resourceGroupName \
 	--settings COMP_VISION_KEY=$compVisionKey COMP_VISION_URL=$compVisionUrl 
-    -o table
+	-o table
 az functionapp deployment source config -n $functionName -g $resourceGroupName \
 	--repo-url $githubUrl
 	--branch master
 	--repository-type github
 az functionapp deployment source sync -n $functionName -g $resourceGroupName
 functionUrl="https://"$(az functionapp show \
-    -n $functionName -g $resourceGroupName \
+	-n $functionName -g $resourceGroupName \
 	--query "defaultHostName" \
 	--output tsv)
 	
@@ -132,7 +130,7 @@ az storage blob upload -c \$web \
 	-n settings.js
 ```
 
-As shown, most of the required resources can be provisioned and configured using Azure CLI 2.0, including retrieving connection strings, account keys etc. and setting them as configuration values for other resources, setting CORS (cross-origin resource sharing) rules, etc. However, even though CLI 2.0 (v2.0.49) at the time of this writing supports most of the resources we’d want to use, there are still a few resources that are missing, such as diagnostic logging which is supported via CLI 1.0 (e.g., with the `azure insights diagnostic` command). So there are still a few steps that need to done separately, such as setting up Application Insights and Log Analytics for monitoring purposes.
+As shown, most of the required resources can be provisioned and configured using Azure CLI 2.0, including retrieving connection strings, account keys etc. and setting them as configuration values for other resources, setting CORS (cross-origin resource sharing) rules, etc. However, even though CLI 2.0 (v2.0.49) at the time of this writing supports most of the resources we’d want to use, there are still a few resources that are missing, such as setting up diagnostic logging which is supported via CLI 1.0 (e.g., with the `azure insights diagnostic` command). So there are still a few steps that need to done separately.
 
 As a result, the resource group that hosts this application looks like this:
 
@@ -150,7 +148,7 @@ module.exports = function (context, req, documents) {
 };
 ```
 
-And the trigger and binding configuration in function.js:
+And the trigger and binding configuration in function.json:
 ```json
 {
   "bindings": [
@@ -179,7 +177,7 @@ And the trigger and binding configuration in function.js:
 }
 ```
 
-As shown, GetImages uses the HTTP trigger so it can be called from the client app, and provides a response via HTTP. The work it does to query Cosmos DB to get a list of images is all in configuration in function.js – the database and collection names, the SQL query to execute, and the connection which is provided by Azure (as long as we name the Cosmos DB account “imgrec” in this case).
+As shown, GetImages uses the HTTP trigger so it can be called from the client app, and provides a response via HTTP. The work it does to query Cosmos DB to get a list of images is all in configuration in function.json – the database and collection names, the SQL query to execute, and the connection which is provided by Azure (as long as we name the Cosmos DB account “imgrec” in this case).
 
 And below is a screenshot of the application settings tab for the Function app.
 
@@ -244,7 +242,7 @@ Below is a screenshot of the Deployment Center in a Function app instance, with 
 
 ![deployment center](/assets/20181107-deployment.png)
 
-In the Azure CLI Bash script the sync command is called just to ensure a repository synchronization is done. However, that isn’t necessary from an ongoing basis because automated synchronization is also enabled so that changes are synchronized whenever they are committed to the designated branch in Github.
+In the Azure CLI Bash script the sync command is called just to ensure a repository synchronization is done. However, that isn’t necessary from an ongoing basis because automated synchronization is also enabled so that changes are synchronized whenever they are committed to the designated branch in Github. As a result, we can manage the updates to the appliation code in multiple environments via Github. And from that perspective, we can also add in Azure DevOps for more development process management capabilities.
 
 ## Multi-Region Deployment
 
@@ -268,21 +266,21 @@ And to accommodate CORS requirements from the client app in the browser issuing 
 
 And that’s all we have to do for Cosmos DB; we don’t need to add logic to the application code to handle a fail-over scenario because Cosmos DB provides a top-level end point for applications to use (e.g., application clients use the “https://imgrec.documents.azure.com:443/” end point in this case, and Cosmos DB internally directs connections to the appropriate instances at “https://imgrec-westus2.documents.azure.com:443/” or “https://imgrec-eastus2.documents.azure.com:443/”).
 
-Also, it isn’t necessary to create more Cosmos DB instances, because Function app instances in separate regions can use a shared Cosmos DB instance. But, working with a Cosmos DB instance locally in the same region as the Function app instances yields better performance and provides fault-tolerance if/when region failures occur. Plus, Cosmos DB takes care of data replication across instances, which is the most complex part of this architecture.
+It isn’t necessary to create more Cosmos DB instances, because Function app instances in separate regions can use a shared Cosmos DB instance. But, working with a Cosmos DB instance locally in the same region as the Function app instances yields better performance and provides fault-tolerance if/when region failures occur. Plus, Cosmos DB takes care of data replication across instances, which is the most complex part of this architecture.
 
 **Blob Storage** – since we’re using RA-GRS (read-access geo-redundant storage), all files stored in Blob Storage will be available in the event of regional failures (even though read-only). Though the application needs some changes in order to use multiple Blob Storage regions, such as making sure the entire URL to each file stored is recorded along the metadata for each file in Cosmos DB (the original implementation assumes a single-region deployment but now image files can reside in either west or east region), so that the client application knows where to retrieve the file
 
-**Monitoring** - now with a distributed architecture, Application Insights and Log Analytics also become shared (as opposed to regional) resources, like Traffic Manager. So the new resources should be configured to send diagnostics and application telemtry data to these resources, for centralized monitoring.
+**Monitoring** - now with a distributed architecture, Application Insights and Log Analytics also become shared (as opposed to regional) resources, like Traffic Manager. So the new resources should be configured to send diagnostics and application telemetry data to these resources, for centralized monitoring.
 
 As a result, the resource group that hosts this application looks like this, now with the newly added resources in "East US 2" region:
 
 ![resource group](/assets/20181107-resource-group-2.png)
 
-Finally, the configuration management, continuous deployment, logging and monitoring aspects mentioner earlier all help to quickly on-ramp additional regions in a consistent manner. If needed, this application can be provisioned in more regions across the world, to provide resources to customers closer to their locations, extending the production environment without disrupting live users. Each region scales independently, leveraging Cosmos DB and its multi-master write capability to maintain data integrity across all regions.
+Finally, the configuration management, continuous deployment, logging and monitoring aspects mentioned earlier all help to quickly on-ramp additional regions in a consistent manner. If needed, this application can be provisioned in more regions across the world, to provide resources to customers closer to their locations, extending the production environment without disrupting live users. Each region scales independently, but works together seamlessly, leveraging Cosmos DB and its multi-master write capability to maintain data integrity across all regions.
 
 ## A Few More Thoughts
 
-Even if we provision this application across more regions across the world, such as two in Europe and two in Asia (6 regions total), this serverless architecture at idle state (no user transactions) would only incur charges for the amount of storage consumed in Blob Storage (<1MB for the static web app files, plus images), and the Cosmos DB Request Unit (RU) throughput level allocation (and storage consumed in Cosmos DB but that’s usually a smaller portion of the cost). We didn't have to allocate and provision any 'servers' to implement this architecture.
+Even if we provision this application across more regions across the world, such as two in Europe and two in Asia (6 regions total), this serverless architecture at idle state (no user transactions) has no running processes. It would only incur charges for the amount of storage consumed in Blob Storage (<1MB for the static web app files, plus images uploaded by users), and the Cosmos DB Request Unit (RU) throughput level allocation (and data storage consumed in Cosmos DB but that’s usually a smaller portion of the cost). We didn't have to allocate and provision any persistent 'servers' to implement this architecture.
 
 At the 400 RU/s level, each Cosmos DB instance costs approximately $50 per month (at list pricing published on the Azure website; rounded up for sake of looking at simpler numbers), and we’d incur that for each region provisioned for this architecture. Thus for this particular architecture with 2 regions provisioned, the minimal cost at idle would be (roughly) $100 per month. That is similar in cost to running two B1S Virtual Machine instances (B1S ‘burstable’ instance provides 1 Core, 1GiB RAM at $0.011/hour pay-as-you-go price level).
 
