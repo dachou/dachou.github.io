@@ -109,11 +109,11 @@ az functionapp cors add -g $resourceGroupName -n $functionName \
 az functionapp config appsettings set -n $functionName -g $resourceGroupName \
 	--settings AZURE_STORAGE_CONNECTION_STRING=$blobConnection -o table
 az functionapp config appsettings set -n $functionName -g $resourceGroupName \
-	--settings COMP_VISION_KEY=$compVisionKey COMP_VISION_URL=$compVisionUrl 
+	--settings COMP_VISION_KEY=$compVisionKey COMP_VISION_URL=$compVisionUrl \ 
 	-o table
 az functionapp deployment source config -n $functionName -g $resourceGroupName \
-	--repo-url $githubUrl
-	--branch master
+	--repo-url $githubUrl \
+	--branch master \
 	--repository-type github
 az functionapp deployment source sync -n $functionName -g $resourceGroupName
 functionUrl="https://"$(az functionapp show \
