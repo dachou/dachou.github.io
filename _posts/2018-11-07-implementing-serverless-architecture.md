@@ -111,6 +111,8 @@ az functionapp config appsettings set -n $functionName -g $resourceGroupName \
 az functionapp config appsettings set -n $functionName -g $resourceGroupName \
 	--settings COMP_VISION_KEY=$compVisionKey COMP_VISION_URL=$compVisionUrl \ 
 	-o table
+az functionapp config appsettings set --n $functionName -g $resourceGroupName \ 
+    --settings FUNCTIONS_EXTENSION_VERSION=~1
 az functionapp deployment source config -n $functionName -g $resourceGroupName \
 	--repo-url $githubUrl \
 	--branch master \
