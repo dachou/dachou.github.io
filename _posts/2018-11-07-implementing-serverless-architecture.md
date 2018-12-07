@@ -54,7 +54,7 @@ az group create -n $resourceGroupName -l $location
 az storage account create -n $accountName -g $resourceGroupName \
 	--kind StorageV2 -l $location \
 	--https-only true \
-	--sku Standard_RAGRS
+	--sku Standard_GRS
 az storage container create -n images \
 	--account-name $accountName \
 	--public-access blob
