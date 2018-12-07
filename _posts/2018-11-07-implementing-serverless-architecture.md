@@ -221,7 +221,7 @@ As well as the function.json configuration for the ResizeImages function, where 
 
 And the code snippet in ResizeImage's index.js to call the Computer Vision API in Cognitive Services, where it accesses the environment variable directly via `process.env.COMP_VISION_URL` and `process.env.COMP_VISION_KEY`:
 ```javascript
-axios.post(process.env.COMP_VISION_URL + '/analyze?visualFeatures=Description&language=en', myBlob, {
+axios.post(process.env.COMP_VISION_URL + 'vision/v1.0/analyze?visualFeatures=Description&language=en', myBlob, {
     headers: {
         'Ocp-Apim-Subscription-Key': process.env.COMP_VISION_KEY,
         'Content-Type': 'application/octet-stream'
