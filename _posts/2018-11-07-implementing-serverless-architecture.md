@@ -43,6 +43,7 @@ location='<Azure region name>'
 accountName='<Location-specific Blob Storage account name>'
 compVisionName='<Location-specific Cognitive Services account name>'
 functionName='<Location-specific Function account name>'
+functionStorageName='<Location-specific Storage account name used for Function apps>'
 cosmosName='<Cosmos DB account name>'
 databaseName='<Cosmos DB database name>'
 githubUrl='<Github repo URL>'
@@ -51,10 +52,14 @@ githubUrl='<Github repo URL>'
 az group create -n $resourceGroupName -l $location
 
 # Blob Storage
-az storage account create -n $accountName -g $resourceGroupName \
+az storage account create -n $functionStorageName -g $resourceGroupName \
 	--kind StorageV2 -l $location \
 	--https-only true \
 	--sku Standard_GRS
+az storage account create -n $accountName -g $resourceGroupName \
+	--kind StorageV2 -l $location \
+	--https-only true \
+	--sku Standard_RAGRS
 az storage container create -n images \
 	--account-name $accountName \
 	--public-access blob
@@ -103,7 +108,7 @@ compVisionUrl=$(az cognitiveservices account show \
 
 # Function
 az functionapp create -n $functionName -g $resourceGroupName \
-	-s $accountName -c $location
+	-s $functionStorageName -c $location
 az functionapp cors add -g $resourceGroupName -n $functionName \
 	--allowed-origins $webBaseUrl
 az functionapp config appsettings set -n $functionName -g $resourceGroupName \
@@ -221,12 +226,13 @@ As well as the function.json configuration for the ResizeImages function, where 
 
 And the code snippet in ResizeImage's index.js to call the Computer Vision API in Cognitive Services, where it accesses the environment variable directly via `process.env.COMP_VISION_URL` and `process.env.COMP_VISION_KEY`:
 ```javascript
-axios.post(process.env.COMP_VISION_URL + 'vision/v1.0/analyze?visualFeatures=Description&language=en', myBlob, {
+axios.post(process.env.COMP_VISION_URL + '/vision/v1.0/analyze?visualFeatures=Description&language=en', myBlob, {
     headers: {
         'Ocp-Apim-Subscription-Key': process.env.COMP_VISION_KEY,
         'Content-Type': 'application/octet-stream'
     }
 ```
+One thing to point out, at the time of this writing, Azure CLI returns the Computer Vision API URL as "<region>.api.cognitive.microsoft.com", so we had to manually append "/vision/v1.0" to fix the implementation. This can be done either in the COMP_VISION_URL variable in the App Settings page for the Function App (as shown in the screenshot above), or in the JavaScript code for this function (as shown in the code snippet above).
 
 The ability to abstract environment configuration details from code is key to enabling a consistent resource provisioning and configuration process when managing the architecture that has multiple environments, and/or spans multiple physical regions.
 
