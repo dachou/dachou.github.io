@@ -54,7 +54,7 @@ az group create -n $resourceGroupName -l $location
 az storage account create -n $accountName -g $resourceGroupName \
 	--kind StorageV2 -l $location \
 	--https-only true \
-	--sku Standard_RAGRS
+	--sku Standard_GRS
 az storage container create -n images \
 	--account-name $accountName \
 	--public-access blob
@@ -109,11 +109,13 @@ az functionapp cors add -g $resourceGroupName -n $functionName \
 az functionapp config appsettings set -n $functionName -g $resourceGroupName \
 	--settings AZURE_STORAGE_CONNECTION_STRING=$blobConnection -o table
 az functionapp config appsettings set -n $functionName -g $resourceGroupName \
-	--settings COMP_VISION_KEY=$compVisionKey COMP_VISION_URL=$compVisionUrl 
+	--settings COMP_VISION_KEY=$compVisionKey COMP_VISION_URL=$compVisionUrl \ 
 	-o table
+az functionapp config appsettings set --n $functionName -g $resourceGroupName \ 
+    --settings FUNCTIONS_EXTENSION_VERSION=~1
 az functionapp deployment source config -n $functionName -g $resourceGroupName \
-	--repo-url $githubUrl
-	--branch master
+	--repo-url $githubUrl \
+	--branch master \
 	--repository-type github
 az functionapp deployment source sync -n $functionName -g $resourceGroupName
 functionUrl="https://"$(az functionapp show \
@@ -219,7 +221,7 @@ As well as the function.json configuration for the ResizeImages function, where 
 
 And the code snippet in ResizeImage's index.js to call the Computer Vision API in Cognitive Services, where it accesses the environment variable directly via `process.env.COMP_VISION_URL` and `process.env.COMP_VISION_KEY`:
 ```javascript
-axios.post(process.env.COMP_VISION_URL + '/analyze?visualFeatures=Description&language=en', myBlob, {
+axios.post(process.env.COMP_VISION_URL + 'vision/v1.0/analyze?visualFeatures=Description&language=en', myBlob, {
     headers: {
         'Ocp-Apim-Subscription-Key': process.env.COMP_VISION_KEY,
         'Content-Type': 'application/octet-stream'
