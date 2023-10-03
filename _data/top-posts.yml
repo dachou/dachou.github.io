@@ -1,17 +1,32 @@
+- date: 28 SEP 2018
+  title: Cloud Service Models (IaaS, PaaS, SaaS) Diagram
+  utl: https://dachou.github.io/2018/09/28/cloud-service-models.html
+  views: 7908
+
+- date: 15 OCT 2018
+  title: Event-Driven Serverless Architectures
+  utl: https://dachou.github.io/2018/10/15/event-driven-serverless.html
+  views: 126
+
+- date: 07 NOV 2018
+  title: Implementing a Serverless Architecture
+  utl: https://dachou.github.io/2018/11/07/implementing-serverless-architecture.html
+  views: 96
+
 - date: 10 Nov 2008
   title: Using Events in Highly Distributed Architectures
   url: https://dachou.github.io/2008/11/10/using-events-in-highly-distributed-architectures.html
   views: 99999
 
-- date: 17 Jan 2011
-  title: Run Java with GlassFish in Windows Azure
-  url: https://dachou.github.io/2011/01/17/run-java-with-glassfish-in-windows-azure.html
-  views: 21937
+- date: 17 Apr 2008
+  title: .NET and Multiple Inheritance
+  url: https://dachou.github.io/2008/04/17/net-and-multiple-inheritance.html
+  views: 17073
 
-- date: 21 Mar 2010
-  title: Run Java with Jetty in Windows Azure
-  url: https://dachou.github.io/2010/03/21/run-java-with-jetty-in-windows-azure.html
-  views: 21596
+- date: 16 Mar 2011
+  title: Rise of the Cloud Ecosystems
+  url: https://dachou.github.io/2011/03/16/cloud-ecosystems.html
+  views: 16554
 
 - date: 13 Jan 2009
   title: Cloud Computing and the Microsoft Platform
@@ -23,25 +38,10 @@
   url: https://dachou.github.io/2007/12/01/describing-web-platform-stack.html
   views: 17389
 
-- date: 17 Apr 2008
-  title: .NET and Multiple Inheritance
-  url: https://dachou.github.io/2008/04/17/net-and-multiple-inheritance.html
-  views: 17073
-
-- date: 25 Jul 2008
-  title: Describing Cloud Computing
-  url: https://dachou.github.io/2008/07/25/describing-cloud-computing.html
-  views: 17049
-
 - date: 23 Jan 2011
   title: Designing for Cloud-Optimized Architecture
   url: https://dachou.github.io/2011/01/23/designing-for-cloud-optimized-architecture.html
   views: 16870
-
-- date: 16 Mar 2011
-  title: Rise of the Cloud Ecosystems
-  url: https://dachou.github.io/2011/03/16/cloud-ecosystems.html
-  views: 16554
 
 - date: 18 Aug 2008
   title: Strong User Authentication on the Web
