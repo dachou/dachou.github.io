@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: David Chou
-email: david.chou@microsoft.com
+email: david.chou@psithyros.com
 description: A software engineer's personal blog
 desc1: software research and development
 desc2: cloud and AI
