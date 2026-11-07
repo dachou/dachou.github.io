@@ -15,6 +15,8 @@ In this new paradigm, organizational architecture becomes a software engineering
 
 The competitive advantage may no longer come primarily from having the most talented workforce, but from designing the most capable organizational system.
 
+![The AI-Native Entperise Architecture](/assets/20261107-01_architecture_3x.png)
+
  <!--more-->
 
 ## The Enterprise Is Becoming Software
@@ -87,7 +89,7 @@ Some distinguishing characteristics for these organizations:
 - **Continuous experimentation**: Investigation of numerous business opportunities simultaneously, prototype development, alternatives evaluation, and elimination of unsuccessful ideas at relatively low cost.
 - **Dynamic resource allocation**: Agents are created, reassigned, replicated, or retired as business priorities change.
 
-![From static organization to a self-improving enterprise](/assets/20261107-04_self_improving _enterprise.png)
+![From static organization to a self-improving enterprise](/assets/20261107-04_self_improving_enterprise.png)
 
 The organization longer needs to maintain a fixed workforce and conventional departmental structure to accomplish its objectives. Its operational capacity can become much more elastic as an enterprise works as a distributed software system with adjustable architectural ‘controls’ (velocity, risk, cost, etc.); enabling higher organizational agility and resilience.
 
