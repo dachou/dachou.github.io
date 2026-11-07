@@ -5,7 +5,7 @@ date:   2026-11-07 00:00:00 -0700
 excerpt_separator: <!--more-->
 ---
 
-**AI agents may transform organizational architecture, the economics of scale, and the future of human leadership.**
+**AI agents may transform organizational architecture, the economies of scale, and the future of human leadership.**
 
 The enterprise is becoming an intelligent, programmable, and self-improving system.
 
