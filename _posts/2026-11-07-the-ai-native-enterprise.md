@@ -226,4 +226,3 @@ Zhu L. (2026), Fluid Structure, Rigid Record: A Layered Organizational Design Fr
 Storey M. (2026), From Technical Debt to Cognitive and Intent Debt: Rethinking Software Health in the Age of AI. <https://arxiv.org/abs/2603.22106>
 
 Neil D. (2026), Building an AI-Native Pharma Company. *Formation Bio*. <https://www.formation.bio/blog/building-an-ai-native-pharma-company>
-
