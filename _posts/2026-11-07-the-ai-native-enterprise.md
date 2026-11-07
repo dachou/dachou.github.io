@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The AI-Native Enterprise: When Organizations Become Software"
-date:   2026-11-07 12:00:00 -0700
+date:   2026-11-07 00:00:00 -0700
 excerpt_separator: <!--more-->
 ---
 
