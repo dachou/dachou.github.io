@@ -136,6 +136,7 @@ A self-improving organization still needs to balance trade-offs between organiza
 This fundamental design trade-off can also be a dynamic factor in operation, as an AI-native enterprise should dynamically allocate decision-making authority to agents according to the risk, reversibility, and consequence of the decisions.
 
 For example:
+
 | Decision                | Appropriate autonomy |
 |-------------------------|----------------------|
 | Conduct market research | High                 |
