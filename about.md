@@ -4,11 +4,11 @@ title: About
 permalink: /about/
 ---
 
-I am a software engineer currently focused on cloud computing and machine learning technologies, and leadership in vision, strategy, planning, and execution of development projects and business initiatives. This is my personal blog site where I write about random technical topics that interest me.
+Architect and engineering leader with deep experiences in AI, cloud, and software innovation, with a track record driving global platform adoption, revenue growth, and engineering excellence. My work has spanned hands-on development, technical strategy, and organizational leadership — helping startups and enterprises alike design scalable, data-driven, intelligent, and resilient systems to translate ideas into impactful solutions.
 
-Over the course of my career, I have delivered many enterprise-grade, high-scale, commercial software and enterprise applications using C# and .NET, Java and J2EE, JavaScript, Smalltalk, Python, and many other languages; with projects from client-server, web applications, middleware, service-orientation, distributed systems, mobile apps, microservices, to serverless and data-driven architectures.
+At Microsoft, delivered global adoption and value realization for development platforms, from .NET, Silverlight, Windows, Windows Phone, XBOX, HoloLens, and Azure; to GitHub Copilot, GitHub Platform, Copilot Studio, and Power Platform. Proven leadership with complex projects and strategies driving multiple billion-dollar global businesses with hundreds of millions of users. Led high-performing technical and strategy teams to scale enterprise adoption programs that accelerated developer productivity, modern workload deployment, and durable cloud value with sustained outcomes.
 
-I am fascinated by code, its design and usage, and the resulting software we can create with code; and particularly interested in learning from others. I rarely express opinions here, but when I do, they’re my personal opinions and not those of any company I work at.
+This is my personal blog site where I write about random technical topics that interest me. I am fascinated by code, its design and usage, and the resulting software we can create; and particularly interested in learning from others. I rarely express opinions here, but when I do, they’re my personal opinions and not those of any company I work at.
 
 Thanks for visiting! Please feel free to reach out and contact me with any comments and/or questions.
 
