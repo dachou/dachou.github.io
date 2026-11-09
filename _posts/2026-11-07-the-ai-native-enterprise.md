@@ -213,7 +213,7 @@ AI assisted in writing and research. Initial drafts, thought direction, synthesi
 
 This essay is an independent synthesis informed by these existing works.
 
-Sukharevsky A., Krivkovich A., Gast A., Storozhev A., Maor D., Mahadevan D., Hämäläinen L., Durth S. (2025), The Agentic Organization. *McKinsey*. <https://www.mckinsey.com/capabilities/people-and-organization/our-insights/the-agentic-organization-contours-of-the-next-paradigm-for-the-ai-era>
+Sukharevsky A., Krivkovich A., Gast A., Storozhev A., Maor D., Mahadevan D., Hämäläinen L., Durth S. (2025), The agentic organization: Contours of the next paradigm for the AI era. *McKinsey*. <https://www.mckinsey.com/capabilities/people-and-organization/our-insights/the-agentic-organization-contours-of-the-next-paradigm-for-the-ai-era>
 
 Shen J.H., Zhu D., Srinivasan S., Sleight H., Wagner L.T., Matthews M.J., Jones E., Sohl-Dickstein J. (2026), AI Organizations Can Be More Effective but Less Aligned than Individual Agents. *Anthropic Alignment Science Blog*. <https://alignment.anthropic.com/2026/ai-organizations/>
 
