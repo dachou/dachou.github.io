@@ -15,7 +15,7 @@ In this new paradigm, organizational architecture becomes a software engineering
 
 The competitive advantage may no longer come primarily from having the most talented workforce, but from designing the most capable organizational system.
 
-![The AI-Native Entperise Architecture](/assets/20261107-01_architecture_3x.png)
+![The AI-Native Enterprise Architecture](/assets/20261107-01_architecture_3x.png)
 
  <!--more-->
 
@@ -91,7 +91,7 @@ Some distinguishing characteristics for these organizations:
 
 ![From static organization to a self-improving enterprise](/assets/20261107-04_self_improving_enterprise.png)
 
-The organization longer needs to maintain a fixed workforce and conventional departmental structure to accomplish its objectives. Its operational capacity can become much more elastic as an enterprise works as a distributed software system with adjustable architectural ‘controls’ (velocity, risk, cost, etc.); enabling higher organizational agility and resilience.
+The organization no longer needs to maintain a fixed workforce and conventional departmental structure to accomplish its objectives. Its operational capacity can become much more elastic as an enterprise works as a distributed software system with adjustable architectural ‘controls’ (velocity, risk, cost, etc.); enabling higher organizational agility and resilience.
 
 ### The Enterprise as a Software Architecture
 
@@ -215,11 +215,15 @@ This essay is an independent synthesis informed by these existing works.
 
 Sukharevsky A., Krivkovich A., Gast A., Storozhev A., Maor D., Mahadevan D., Hämäläinen L., Durth S. (2025), The agentic organization: Contours of the next paradigm for the AI era. *McKinsey*. <https://www.mckinsey.com/capabilities/people-and-organization/our-insights/the-agentic-organization-contours-of-the-next-paradigm-for-the-ai-era>
 
+Esch P. (2026), From agentic AI to AI-orchestrated organizations: Understanding the next surge in artificial intelligence. *Business Horizons*. <https://doi.org/10.1016/j.bushor.2026.03.003>
+
 Shen J.H., Zhu D., Srinivasan S., Sleight H., Wagner L.T., Matthews M.J., Jones E., Sohl-Dickstein J. (2026), AI Organizations Can Be More Effective but Less Aligned than Individual Agents. *Anthropic Alignment Science Blog*. <https://alignment.anthropic.com/2026/ai-organizations/>
 
 Gassmann O., Wincent J. (2025), The Non-Human Enterprise: How AI Agents Reshape Organizations. *California Review Management*. <https://cmr.berkeley.edu/2025/10/the-non-human-enterprise-how-ai-agents-reshape-organizations/>
 
-Füller J. (2026), Becoming an AI-First Company: Six Aspects of Organizational Redesign. *The Journal of Applied Benavior Science*. <https://journals.sagepub.com/doi/10.1177/00218863261491368>
+Borghoff U., Bottoni P. , Pareschi R. (2025), An organizational theory for multi-agent interactions integrating human agents, LLMs, and specialized AI. *Discover Computing*. <https://link.springer.com/article/10.1007/s10791-025-09667-2>
+
+Füller J. (2026), Becoming an AI-First Company: Six Aspects of Organizational Redesign. *The Journal of Applied Behavioral Science*. <https://journals.sagepub.com/doi/10.1177/00218863261491368>
 
 Zhu L. (2026), Fluid Structure, Rigid Record: A Layered Organizational Design Framework for Agent-Native Organizations.  <https://arxiv.org/html/2608.08516v1>
 
